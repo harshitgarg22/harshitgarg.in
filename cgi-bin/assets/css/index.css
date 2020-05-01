@@ -1,0 +1,65 @@
+/* Color Palettes 
+    Morning Espresso: #332a1a #7c5b41 #efdcd3 #aa574b #541c13
+    On the telly: #161514 #b85c3c #e5af7d #fff6e9 #9bceb5
+*/
+
+body {
+  background-color: #fff6e9;
+}
+
+#main-content {
+    margin-top: 10%;
+    
+}
+
+#page-content {
+    margin-left: 40vh;
+    font-family: 'Noto Serif', serif;
+}
+
+#greetings {
+  font-family: "Fira Mono", monospace;
+  font-size: 3vw;
+  /* align-content: center; */
+}
+
+/* 
+#greetings-header {
+  font-size: 1.5vw;
+  position: relative;
+} */
+
+#greetings-command {
+  float: right;
+  margin-right: 7vh;
+}
+
+#greetings-command-display {
+  float: left;
+  position: absolute;
+  right: 23vw;
+  padding-left: 0.3em;
+  padding-right: 0.3em;
+}
+
+#greetings-command-prefix {
+  float: right;
+  position: absolute;
+  right: 50vw;
+}
+
+#greetings-command-suffix {
+  float: right;
+  position: absolute;
+  left: 163vh;
+}
+
+.show {
+  opacity: 0.7;
+  transition: ease-in-out 700ms;
+}
+
+.hide {
+  opacity: 0;
+  transition: ease-in-out 700ms;
+}
