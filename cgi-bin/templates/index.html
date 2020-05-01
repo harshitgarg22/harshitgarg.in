@@ -1,28 +1,57 @@
-<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Harshit Garg</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="static/css/nav.css" />
+    <link rel="stylesheet" href="static/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Harshit Garg</title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="static/css/nav.css">
-  <link rel="stylesheet" href="static/css/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap" rel="stylesheet">
-</head>
+  <body onload="displayGreetings(greetings)">
+    <div id="main-content">
+      <nav id="vertical-nav">
+        <ul id="nav-list">
+          <li>
+            <a href="#me" onclick="javascript:;" class="nav-element">me</a>
+          </li>
+          <li>
+            <a href="#projects" onclick="javascript:;" class="nav-element"
+              >projects</a
+            >
+          </li>
+        </ul>
+      </nav>
 
-<body>
+      <div id="greetings">
+        <!-- <div id="greetings-header">&NonBreakingSpace;</div> -->
+        <div id="greetings-command">
+          <div id="greetings-command-prefix"></div>
+          <div id="greetings-command-display"></div>
+          <div id="greetings-command-suffix"></div>
+        </div>
+        <div id="greetings-language"></div>
+      </div>
+      <article id="page-content">
+        <div name="me">
+          <h1>me</h1>
+        </div>
+      </article>
+    </div>
+  </body>
 
-  <nav id="vertical-nav">
-    <ul id="nav-list">
-      <li><a href="#me" onclick="javascript:;" class="nav-element">me</a></li>
-      <li><a href="#projects" onclick="javascript:;" class="nav-element">projects</a></li>
-    </ul>
-  </nav>
-
-  <article>
-    <div id="hello_world">print("Hello World!")</div>
-  </article>
-</body>
-
+  <script type="text/javascript">
+    greetings = {{greetings|tojson}}
+  </script>
+  <script src="static/js/text_scramble.js"></script>
+  <script src="static/js/index.js"></script>
 </html>
