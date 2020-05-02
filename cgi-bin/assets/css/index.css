@@ -34,8 +34,7 @@ hr {
 #me {
   width: fit-content;
   height: fit-content;
-  /* clear: both; */
-  margin: 1vw;
+  float: left;
 }
 
 #me > img {
@@ -45,7 +44,6 @@ hr {
 
 #me > figcaption {
   text-align: center;
-  /* display: block; */
   margin-top: 1em;
   font-size: 1.4vw;
 }
@@ -57,8 +55,4 @@ hr {
 }
 
 #me-info {
-}
-
-.content{
-  display: flex;
 }
