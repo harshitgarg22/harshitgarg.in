@@ -18,20 +18,19 @@
   </head>
 
   <body onload="displayGreetings(greetings)">
+    <nav id="vertical-nav">
+      <ul id="nav-list">
+        <li>
+          <a href="#me" onclick="javascript:;" class="nav-element">me</a>
+        </li>
+        <li>
+          <a href="#projects" onclick="javascript:;" class="nav-element"
+            >projects</a
+          >
+        </li>
+      </ul>
+    </nav>
     <div id="main-content">
-      <nav id="vertical-nav">
-        <ul id="nav-list">
-          <li>
-            <a href="#me" onclick="javascript:;" class="nav-element">me</a>
-          </li>
-          <li>
-            <a href="#projects" onclick="javascript:;" class="nav-element"
-              >projects</a
-            >
-          </li>
-        </ul>
-      </nav>
-
       <div id="greetings">
         <!-- <div id="greetings-header">&NonBreakingSpace;</div> -->
         <div id="greetings-command">
@@ -42,9 +41,30 @@
         <div id="greetings-language"></div>
       </div>
       <article id="page-content">
-        <div name="me">
+        <section name="me">
+          <br /><br />
           <h1>me</h1>
-        </div>
+          <hr />
+          <br /><br />
+          <p><figure id="me">
+            <img
+              src="/static/images/me.jpg"
+              alt="A photo of me circa 2019"
+              title="A photo of me circa 2019"
+            />
+            <!-- <figcaption>me, circa 2019</figcaption> -->
+          </figure>
+          Hello
+          <div class="description" id="me-info">
+            Hello
+          </div></p>
+        </section>
+        <section name="projects">
+          <br /><br />
+          <h1>projects</h1>
+          <hr />
+          <br /><br />
+        </section>
       </article>
     </div>
   </body>
