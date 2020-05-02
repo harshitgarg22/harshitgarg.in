@@ -1,7 +1,7 @@
 .nav-element{
     text-decoration: none;
-    list-style-type: none;
-    padding: 0.5em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
     color: #541c13;
     font-family: 'Noto Serif', serif;
     font-size: 2vw;
@@ -10,14 +10,16 @@
 #nav-list{
     list-style-type: none;
     text-align: right;
-    float: left;
 }
 
 #vertical-nav{
+    float: left;
+    width: fit-content;
     position: sticky;
     top: 10vh;
     margin-top: 10vh;
     margin-left: 10vw;
+    clear: none;
 }
 
 @media (max-width: 600px){
