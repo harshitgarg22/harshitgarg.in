@@ -49,10 +49,6 @@ hr {
 }
 
 .description {
-  /* width: min-content; */
-  word-break: break-all;
+  word-break: normal;
   font-size: calc(1em + 0.5vw);
-}
-
-#me-info {
 }
