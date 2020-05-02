@@ -4,7 +4,7 @@
     padding-left: 0.5em;
     color: #541c13;
     font-family: 'Noto Serif', serif;
-    font-size: 2vw;
+    font-size: calc(1em + 1vw);
 }
 
 #nav-list{
@@ -13,13 +13,11 @@
 }
 
 #vertical-nav{
-    float: left;
-    width: fit-content;
+    display: flex;
     position: sticky;
     top: 10vh;
-    margin-top: 10vh;
+    margin-top: 10vw;
     margin-left: 10vw;
-    clear: none;
 }
 
 @media (max-width: 600px){
