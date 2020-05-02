@@ -7,11 +7,12 @@
   display: flex;
   font-family: "Fira Mono", monospace;
   font-size: calc(1.2em + 1vw);
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #greetings-command-prefix {
-  flex-basis: 15rem;
+  flex-basis: 17rem;
+  flex-grow: 2;
   text-align: end;
   color: darkred;
 }
@@ -21,6 +22,7 @@
 }
 
 #greetings-command-suffix {
+  flex-grow: 3;
   flex-basis: 5rem;
   color: darkred;
 }
@@ -30,8 +32,8 @@
   margin-left: auto;
   width: fit-content;
   margin-top: 2em;
-  margin-right: 10em;
-  font-size: 0.7em;
+  margin-right: 20%;
+  font-size: 1em;
 }
 
 .show {
