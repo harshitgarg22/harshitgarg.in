@@ -16,15 +16,17 @@ window.displayGreetings = function displayGreetings(greetings) {
   let commandSuffixGreeting = document.getElementById(
     "greetings-command-suffix"
   );
+  commandSuffixGreeting.innerText = '';
   let commandPrefixGreeting = document.getElementById(
     "greetings-command-prefix"
   );
+  commandPrefixGreeting.innerText = '';
   let commandDisplayGreeting = document.getElementById(
     "greetings-command-display"
   );
-  let languageGreeting = document.getElementById("greetings-language");
-
   commandDisplayGreeting.innerText = greetings.display_text;
+  let languageGreeting = document.getElementById("greetings-language");
+  languageGreeting.innerText = '';
 
   const fx = new TextScramble(commandPrefixGreeting);
 

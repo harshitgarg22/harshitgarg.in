@@ -5,79 +5,17 @@
 
 body {
   background-color: #fff6e9;
+  display: flex;
 }
 
-#main-content {
-  margin-top: 15vh;
+#main-content{
+  width: 65%;
+  margin-top: 7%;
 }
 
-#greetings {
-  margin-top: 15vh;
-}
-/* 
-#greetings-header {
-  font-size: 1.5vw;
-  position: relative;
-} */
-
-#greetings-command {
-  float: right;
-  margin-right: 7vh;
-  font-family: "Fira Mono", monospace;
-  font-size: 3vw;
-}
-
-#greetings-command-display {
-  float: left;
-  position: absolute;
-  right: 23vw;
-  padding-left: 0.3em;
-  padding-right: 0.3em;
-}
-
-#greetings-command-prefix {
-  float: right;
-  position: absolute;
-  right: 50vw;
-}
-
-#greetings-command-suffix {
-  float: right;
-  position: absolute;
-  left: 77vw;
-}
-
-#greetings-language {
-  float: right;
-  position: relative;
-  right: 20vw;
+#article-content {
   font-family: "Noto Serif", serif;
-  margin-top: 15vh;
-  font-size: 1.5vw;
-}
-
-@media (max-height: 600px) {
-  #greeings-language {
-    margin-top: 1115vh;
-    background-color: violet;
-  }
-}
-
-.show {
-  opacity: 0.7;
-  transition: ease-in-out 700ms;
-}
-
-.hide {
-  opacity: 0;
-  transition: ease-in-out 700ms;
-}
-
-#page-content {
-  position: absolute;
-  margin-left: 25vw;
-  margin-top: 20vh;
-  font-family: "Noto Serif", serif;
+  margin-left: 2em;
 }
 
 h1 {
@@ -95,30 +33,32 @@ hr {
 
 #me {
   width: fit-content;
-  float: inline-start;
-  clear: none;
+  height: fit-content;
+  /* clear: both; */
+  margin: 1vw;
 }
 
 #me > img {
-  width: 25vw;
+  width: 20em;
   height: auto;
-  /* padding: 2vw; */
 }
 
 #me > figcaption {
   text-align: center;
-  display: block;
-  margin-top: 5vh;
-  font-style: italic;
+  /* display: block; */
+  margin-top: 1em;
   font-size: 1.4vw;
 }
 
 .description {
-  font-family: "Noto Serif", serif;
-  font-size: 2vw;
+  /* width: min-content; */
+  word-break: break-all;
+  font-size: calc(1em + 0.5vw);
 }
 
 #me-info {
-  float: right;
-  width: fit-content;
+}
+
+.content{
+  display: flex;
 }
