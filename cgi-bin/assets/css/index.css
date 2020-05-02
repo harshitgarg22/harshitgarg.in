@@ -8,21 +8,12 @@ body {
 }
 
 #main-content {
-    margin-top: 10%;
-    
-}
-
-#page-content {
-    margin-left: 40vh;
-    font-family: 'Noto Serif', serif;
+  margin-top: 15vh;
 }
 
 #greetings {
-  font-family: "Fira Mono", monospace;
-  font-size: 3vw;
-  /* align-content: center; */
+  margin-top: 15vh;
 }
-
 /* 
 #greetings-header {
   font-size: 1.5vw;
@@ -32,6 +23,8 @@ body {
 #greetings-command {
   float: right;
   margin-right: 7vh;
+  font-family: "Fira Mono", monospace;
+  font-size: 3vw;
 }
 
 #greetings-command-display {
@@ -51,7 +44,23 @@ body {
 #greetings-command-suffix {
   float: right;
   position: absolute;
-  left: 163vh;
+  left: 77vw;
+}
+
+#greetings-language {
+  float: right;
+  position: relative;
+  right: 20vw;
+  font-family: "Noto Serif", serif;
+  margin-top: 15vh;
+  font-size: 1.5vw;
+}
+
+@media (max-height: 600px) {
+  #greeings-language {
+    margin-top: 1115vh;
+    background-color: violet;
+  }
 }
 
 .show {
@@ -62,4 +71,54 @@ body {
 .hide {
   opacity: 0;
   transition: ease-in-out 700ms;
+}
+
+#page-content {
+  position: absolute;
+  margin-left: 25vw;
+  margin-top: 20vh;
+  font-family: "Noto Serif", serif;
+}
+
+h1 {
+  font-size: 3vw;
+  color: darkred;
+  margin-bottom: 3vh;
+}
+
+hr {
+  width: 60vw;
+  height: 5px;
+  background-color: darkred;
+  float: left;
+}
+
+#me {
+  width: fit-content;
+  float: inline-start;
+  clear: none;
+}
+
+#me > img {
+  width: 25vw;
+  height: auto;
+  /* padding: 2vw; */
+}
+
+#me > figcaption {
+  text-align: center;
+  display: block;
+  margin-top: 5vh;
+  font-style: italic;
+  font-size: 1.4vw;
+}
+
+.description {
+  font-family: "Noto Serif", serif;
+  font-size: 2vw;
+}
+
+#me-info {
+  float: right;
+  width: fit-content;
 }

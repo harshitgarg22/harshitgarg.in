@@ -4,7 +4,7 @@
     padding: 0.5em;
     color: #541c13;
     font-family: 'Noto Serif', serif;
-    font-size: x-large;
+    font-size: 2vw;
 }
 
 #nav-list{
@@ -15,4 +15,19 @@
 
 #vertical-nav{
     position: sticky;
+    top: 10vh;
+    margin-top: 10vh;
+    margin-left: 10vw;
+}
+
+@media (max-width: 600px){
+    #vertical-nav{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 600px){
+    #vertical-nav{
+        margin-left: 5vw;
+    }
 }
