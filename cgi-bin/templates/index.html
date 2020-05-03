@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="static/css/nav.css" />
     <link rel="stylesheet" href="static/css/index.css" />
     <link rel="stylesheet" href="static/css/greetings.css" />
+    <link rel="stylesheet" href="static/css/projects.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
       rel="stylesheet"
@@ -16,6 +17,7 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
       rel="stylesheet"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet">
   </head>
 
   <body onload="displayGreetings(greetings)">
@@ -35,14 +37,10 @@
           >
         </li>
         <li>
-          <a href="#books" onclick="javascript:;" class="nav-element"
-            >books</a
-          >
+          <a href="#books" onclick="javascript:;" class="nav-element">books</a>
         </li>
         <li>
-          <a href="#films" onclick="javascript:;" class="nav-element"
-            >films</a
-          >
+          <a href="#films" onclick="javascript:;" class="nav-element">films</a>
         </li>
       </ul>
     </nav>
@@ -58,7 +56,7 @@
       </div>
       <article id="article-content">
         <section name="me">
-          <h1>me</h1>
+          <h1 class="sub-headings">me</h1>
           <hr />
           <br /><br />
           <figure id="me">
@@ -90,7 +88,56 @@
         </section>
         <section name="projects">
           <br /><br />
-          <h1>projects</h1>
+          <h1 class="sub-headings">projects</h1>
+          <hr />
+          <ul id="project-list">
+            {% for project in projects %}
+            <li>
+              <section>
+                <h1 class="project-name">
+                  {{project.name}}
+                </h1>
+                <p class="project-description">
+                  {{project.description}}
+                </p>
+                <p class="project-github">
+                  {% if 'github' in project%}
+                  <a href="{{project.github}}"
+                    ><i class="github-icon"></i>GitHub</a
+                  >
+                  {% endif %}
+                </p>
+                <p class="project-link">
+                  {% if 'link' in project%}
+                  <a href="{{project.link}}"><i class="link-icon"></i>Link</a>
+                  {% endif %}
+                </p>
+                <p class="project-tags">
+                  tags: {% for tag in project.tags %}
+                      {{ tag }}
+                  {% endfor %}
+                </p>
+              </section>
+            </li>
+            {% endfor %}
+          </ul>
+        </section>
+        <section name="internships">
+          <br /><br />
+          <h1 class="sub-headings">internships</h1>
+          <hr />
+          <br /><br />
+          <em>cough </em>PS-1<em> cough</em>
+        </section>
+        <section name="books">
+          <br /><br />
+          <h1 class="sub-headings">books</h1>
+          <hr />
+          <br /><br />
+        </section>
+        <section name="films">
+          <br /><br />
+          <h1 class="sub-headings">films</h1>
           <hr />
           <br /><br />
         </section>
@@ -100,6 +147,7 @@
 
   <script type="text/javascript">
     greetings = {{greetings|tojson}}
+    projects = {{projects|tojson}}
   </script>
   <script src="static/js/text_scramble.js"></script>
   <script src="static/js/index.js"></script>
