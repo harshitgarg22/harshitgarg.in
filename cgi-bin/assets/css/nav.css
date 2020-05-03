@@ -1,10 +1,9 @@
-.nav-element{
-    text-decoration: none;
-    padding-right: 0.5em;
-    padding-left: 0.5em;
-    color: #541c13;
-    font-family: 'Noto Serif', serif;
-    font-size: calc(1em + 1vw);
+#vertical-nav{
+    display: flex;
+    position: sticky;
+    top: 20vh;
+    margin-left: 5vw;
+    align-self: flex-start;
 }
 
 #nav-list{
@@ -12,12 +11,13 @@
     text-align: right;
 }
 
-#vertical-nav{
-    display: flex;
-    position: sticky;
-    top: 10vh;
-    margin-top: 10vw;
-    margin-left: 5vw;
+.nav-element{
+    text-decoration: none;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
+    color: #541c13;
+    font-family: 'Noto Serif', serif;
+    font-size: calc(1em + 1vw);
 }
 
 @media (max-width: 1200px){
