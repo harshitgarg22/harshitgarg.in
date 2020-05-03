@@ -17,10 +17,10 @@
     position: sticky;
     top: 10vh;
     margin-top: 10vw;
-    margin-left: 10vw;
+    margin-left: 5vw;
 }
 
-@media (max-width: 800px) and (min-width: 600px){
+@media (max-width: 1200px){
     #vertical-nav{
         margin-left: 0vw;
     }
