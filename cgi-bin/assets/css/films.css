@@ -1,0 +1,15 @@
+#film-list{
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+#film-list > li section{
+    padding: 0.8em;
+}
+
+#film-list > li section a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-style: italic;
+}
