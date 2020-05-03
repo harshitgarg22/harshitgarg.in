@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, redirect
+import json
 
 app = Flask(__name__, static_folder="./assets", static_url_path="/static")
 
@@ -7,8 +8,9 @@ app = Flask(__name__, static_folder="./assets", static_url_path="/static")
 def home():
     greetings = generateGreetings()
     projects = getProjects()
+    films = getFilms()
 
-    return render_template("index.html", greetings=greetings, projects=projects)
+    return render_template("index.html", greetings=greetings, projects=projects, films=films)
 
 
 @app.route("/afort")
@@ -20,6 +22,14 @@ def afort():
 @app.route("/quantum")
 def quantum():
     return redirect("https://github.com/harshitgarg22/quantum")
+
+def getFilms():
+    films = []
+
+    with open("/static/data/filmData.json", "r") as f:
+        films = json.load(f)
+
+    return films
 
 def getProjects():
     projects = []
