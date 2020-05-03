@@ -1,5 +1,7 @@
 from flask import Flask, render_template, url_for, redirect
 import json
+import os
+import datetime
 
 app = Flask(__name__, static_folder="./assets", static_url_path="/static")
 
@@ -26,10 +28,15 @@ def quantum():
 def getFilms():
     films = []
 
-    with open("/static/data/filmData.json", "r") as f:
+    with open(os.path.join("cgi-bin", "assets", "data", "filmData.json", "r")) as f:
         films = json.load(f)
 
     return films
+
+@app.template_filter('strftime')
+def _jinja2_filter_datetime(date, fmt=None):
+    date = datetime.datetime.strptime(date, "%Y-%m-%d")
+    return date.strftime("%b %d, %Y")
 
 def getProjects():
     projects = []
