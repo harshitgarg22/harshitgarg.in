@@ -1,5 +1,6 @@
 import json
 import sys
+from bs4 import BeautifulSoup as BSHTML
 
 def stripFilms(filmRawData):
     """Returns a files list containing stripped-down output from a letterboxd json file
@@ -16,15 +17,16 @@ def stripFilms(filmRawData):
             "title": eachFilm.get("letterboxd_filmtitle"),
             "year": eachFilm.get("letterboxd_filmyear"), 
             "link": eachFilm.get("link"),
-            "published": eachFilm.get("published"),
             "watcheddate": eachFilm.get("letterboxd_watcheddate"),
             "rewatch": eachFilm.get("letterboxd_rewatch"),
             "rating": eachFilm.get("letterboxd_memberrating"),
-            "summaryHTML": eachFilm.get("summary"),
-            "author": eachFilm["author"]
+            # "published": eachFilm.get("published"),
+            # "imgsrc": imgsrc,
+            # "description": text,
+            # "author": eachFilm["author"]
             })
-        except KeyError:
+        except:
             with open('./error.json', 'a') as f:
-                f.write(str(KeyError) + json.dumps(eachFilm) + '\n')
+                f.write(json.dumps(eachFilm) + '\n')
 
     return films
