@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="static/css/index.css" />
     <link rel="stylesheet" href="static/css/greetings.css" />
     <link rel="stylesheet" href="static/css/projects.css" />
+    <link rel="stylesheet" href="static/css/films.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap"
       rel="stylesheet"
@@ -17,7 +18,10 @@
       href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap"
       rel="stylesheet"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body onload="displayGreetings(greetings)">
@@ -101,21 +105,19 @@
                   {{project.description}}
                 </p>
                 <p class="project-github">
-                  {% if 'github' in project%}
+                  {% if 'github' in project %}
                   <a href="{{project.github}}"
                     ><i class="github-icon"></i>GitHub</a
                   >
                   {% endif %}
                 </p>
                 <p class="project-link">
-                  {% if 'link' in project%}
+                  {% if 'link' in project %}
                   <a href="{{project.link}}"><i class="link-icon"></i>Link</a>
                   {% endif %}
                 </p>
                 <p class="project-tags">
-                  tags: {% for tag in project.tags %}
-                      {{ tag }}
-                  {% endfor %}
+                  tags: {% for tag in project.tags %} {{ tag }} {% endfor %}
                 </p>
               </section>
             </li>
@@ -123,7 +125,7 @@
           </ul>
         </section>
         <section name="internships">
-          <br /><br />
+          <br />
           <h1 class="sub-headings">internships</h1>
           <hr />
           <br /><br />
@@ -139,6 +141,26 @@
           <br /><br />
           <h1 class="sub-headings">films</h1>
           <hr />
+          <ul id="film-list">
+            {% for film in films[:5] %}
+            <li>
+              <section>
+                {% if film.rewatch == "No" %}
+                <span>Watched <span>
+                {% else %}
+                <span>Rewatched </span>
+                {% endif %}
+                <span class="film-title">
+                  <a href="{{film.link}}">{{film.title ~ ", " ~ film.year}}</a>
+                  {% for count in range(film.rating|int) %}&#9733;{% endfor %}
+                  {% if film.rating|float != film.rating|int %}&frac12;{% endif %}
+                  on {{film.watcheddate|strftime}}
+                </span>
+                
+              </section>
+            </li>
+            {% endfor %}
+          </ul>
           <br /><br />
         </section>
       </article>
@@ -147,7 +169,6 @@
 
   <script type="text/javascript">
     greetings = {{greetings|tojson}}
-    projects = {{projects|tojson}}
   </script>
   <script src="static/js/text_scramble.js"></script>
   <script src="static/js/index.js"></script>
