@@ -1,3 +1,10 @@
 .venv/
 .vscode/
 *.pyc
+cgi-bin/.venv
+cgi-bin/__pycache__
+.ftpquota
+.htaccess
+tmp/
+images/
+under-construction.gif
