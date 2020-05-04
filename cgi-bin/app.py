@@ -11,14 +11,17 @@ def home():
     greetings = generateGreetings()
     projects = getProjects()
     films = getFilms()
-
+    
     return render_template("index.html", greetings=greetings, projects=projects, films=films)
 
+@app.route("/saumi")
+def saumi():
+    return render_template("saumi.html")
 
 @app.route("/afort")
 def afort():
-    return render_template(
-        "<html><body>AFORT is currently not available to the general public. If you have any queries, mail at: <em>f20180218@pilani.bits-pilani.ac.in</em></html>"
+    return (
+        "<html><body>AFORT is currently not available to the general public. If you have any queries, mail at: <em>f20180218@pilani.bits-pilani.ac.in</em></body></html>"
     )
 
 @app.route("/quantum")
@@ -28,7 +31,7 @@ def quantum():
 def getFilms():
     films = []
 
-    with open(os.path.join("cgi-bin", "assets", "data", "filmData.json"), "r") as f:
+    with open(os.path.join("assets", "data", "filmData.json"), "r") as f:
         films = json.load(f)
 
     return films
