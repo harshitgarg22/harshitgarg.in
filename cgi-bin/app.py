@@ -46,7 +46,7 @@ def getProjects():
 
     projects.append({
         "name": "AFORT",
-        "description": "A web repository of Attack Trees.",
+        "description": "A web repository of Attack Trees. This is part of the work I'm doing under Prof. Rajesh Kumar of BITS Pilani for attack trees.",
         "github": "https://github.com/harshitgarg22/afort",
         "link": url_for('afort'),
         "tags": ["html", "css", "javascript", "attack-trees", "flask"]
