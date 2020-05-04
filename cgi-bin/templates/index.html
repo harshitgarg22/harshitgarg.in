@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="static/css/greetings.css" />
   <link rel="stylesheet" href="static/css/projects.css" />
   <link rel="stylesheet" href="static/css/films.css" />
-  <link rel="shortcut icon" type="image/png" href="static/icons/tardis.png"/>
+  <link rel="shortcut icon" type="image/png" href="static/icons/tardis.png" />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet" />
@@ -40,7 +40,10 @@
       <li><i class="github-icon" title="github"></i><a href="https://github.com/harshitgarg22">/harshitgarg22</a></li>
       <li><i class="mail-icon" title="mail"></i><a href="mailto:hg1229@gmail.com">hg1229@gmail.com</a></li>
       <li><i class="telegram-icon" title="telegram"></i><a href="https://t.me/harshitgarg22">@harshitgarg22</a></li>
-      <span style="opacity: 0.5; margin-top:2em; display:inline-block; font-style: italic;font-family: Vollkorn, serif;">Find this website on&nbsp; </span><a href="https://github.com/harshitgarg22/harshitgarg.in" style="text-decoration: none; color: black;font-family: Vollkorn, serif;margin-top:2em; display:inline-block;">GitHub</a>
+      <span
+        style="opacity: 0.5; margin-top:2em; display:inline-block; font-style: italic;font-family: Vollkorn, serif;">Find
+        this website on&nbsp; </span><a href="https://github.com/harshitgarg22/harshitgarg.in"
+        style="text-decoration: none; color: black;font-family: Vollkorn, serif;margin-top:2em; display:inline-block;">GitHub</a>
     </ul>
   </nav>
   <div id="main-content">
@@ -55,35 +58,29 @@
     </div>
     <article id="article-content">
       <section name="me">
-        <a name="me"><h1 class="sub-headings">me</h1></a>
+        <a name="me">
+          <h1 class="sub-headings">me</h1>
+        </a>
         <hr />
-        <br /><br />
-        <figure id="me-figure">
-          <img src="/static/images/me.jpg" alt="A photo of me circa 2019" title="A photo of me circa 2019" />
-          <figcaption>
-            me, <span style="font-style: italic;">circa 2019</span>
-          </figcaption>
-        </figure>
-        <div class="description">
-          Consequatur quis ipsa consequuntur sapiente sapiente in voluptatem.
-          Est aspernatur veritatis rerum. Accusamus id fugit libero eos
-          perspiciatis. Inventore voluptate atque omnis eos delectus.
-          Exercitationem commodi beatae est. Voluptate dolorem numquam porro
-          nesciunt. Odio sint cumque sequi ab veniam. Autem et aperiam id
-          libero. Atque voluptates doloremque illum magni. Explicabo quo
-          dignissimos amet quam eaque. Fugiat debitis laborum doloremque illo
-          voluptatem dolorem esse. Voluptatibus soluta autem error et sed ex
-          maxime asperiores. Odit voluptatum provident eaque aut aut sed ipsam
-          omnis. Ut rerum ut qui. Ea qui culpa tempora rem itaque consequatur.
-          Quia aut quae enim velit. Neque aliquam quisquam ut asperiores earum
-          quia at. Sunt qui omnis sit. Eum iusto vel doloribus necessitatibus
-          eos cumque voluptate. Pariatur quis autem exercitationem minus et
-          aspernatur.
+        <div style="display: block;">
+          <figure id="me-figure">
+            <img src="/static/images/me.jpg" alt="A photo of me circa 2019" title="A photo of me circa 2019" />
+            <figcaption>
+              me, <span style="font-style: italic;">circa 2019</span>
+            </figcaption>
+          </figure>
+          <div class="me-description"><br />
+            <p>I'm a sophomore at BITS Pilani Pilani Campus, majoring in Computer Science.</p>
+            <p>Currently I've been toying around with the fields of Natural Language Processing and <a href={{url_for("quantum")}}>Quantum Computing</a>. I've also been learning web development for the purpose of <a href="#projects">some projects</a> (including this website).</p>
+            <p>Additionally, I'm a sucker for all things GNU/Linux <small>(hehe)</small> and making arbitrary, useless scripts for fiddling with stuff on the web. My current daily driver is Solus 4.0 <small>(not solaris)</small>, with the always reliable Budgie DE.</p>
+          </div>
         </div>
       </section>
       <section name="projects">
         <br /><br />
-        <a name="projects"><h1 class="sub-headings">projects</h1></a>
+        <a name="projects">
+          <h1 class="sub-headings">projects</h1>
+        </a>
         <hr />
         <ul id="project-list">
           {% for project in projects %}
@@ -115,7 +112,9 @@
       </section>
       <section name="#internships">
         <br />
-        <a name="internships"><h1 class="sub-headings">internships</h1></a>
+        <a name="internships">
+          <h1 class="sub-headings">internships</h1>
+        </a>
         <hr />
         <br /><br />
         <em>cough </em>PS-1<em> cough</em>
@@ -133,9 +132,10 @@
         </a>
         <hr />
         <span style="font-style: italic; font-family: Volkorn, serif; margin-top: 1em;display:block;    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
-        "><i style="background: url(/static/icons/letterboxd.ico) center left no-repeat; background-size: 1em;padding-left: 1.3em; opacity: 1;"></i><span
-          style="opacity: 0.5;">I'm on
-          letterboxd </span><a href="https://www.letterboxd.com/harshitgarg"
+        "><i
+            style="background: url(/static/icons/letterboxd.ico) center left no-repeat; background-size: 1em;padding-left: 1.3em; opacity: 1;"></i><span
+            style="opacity: 0.5;">I'm on
+            letterboxd </span><a href="https://www.letterboxd.com/harshitgarg"
             style="text-decoration: none; color: black; font-weight: bold; opacity: 1;">@harshitgarg</a></span>
         <ul id="film-list">
           {% for film in films[:5] %}
