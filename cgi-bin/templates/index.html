@@ -129,33 +129,26 @@
           {% for film in films[:5] %}
           <li>
             <section>
-              <!-- {% if film.rewatch == "No" %}
-              <span>Watched <span>
-                  {% else %}
-                  <span>Rewatched </span>
+            <p class='film-card'>
+              <img src={{film.imgsrc}}  class='film-card-image'/>
+              <span class="film-card-description">
+                <span><a class='film-card-title' href="{{film.link}}">{{film.title}}</a>
+                  <span class="film-card-year">{{film.year}}</span></span>
+                <span class='stars'>
+                  {% for count in range(film.rating|int) %}&#9733;{% endfor %}
+                  {% if film.rating|float != film.rating|int %}
+                  &frac12;
                   {% endif %}
-                    <a class="film-watched-title" href="{{film.link}}">{{film.title}}</a> -->
-
-              <p class='film-card'>
-                <img src={{film.imgsrc}} class='film-card-image' />
-                <span class="film-card-description">
-                  <span><a class='film-card-title' href="{{film.link}}">{{film.title}}</a>
-                    <span class="film-card-year">{{film.year}}</span></span>
-                  <span class='stars'>
-                    {% for count in range(film.rating|int) %}&#9733;{% endfor %}
-                    {% if film.rating|float != film.rating|int %}
-                    &frac12;
-                    {% endif %}
-                  </span>
-                  <span class="film-card-watchdate">on {{film.watcheddate|strftime}}</span>
-                  <span class="film-card-review">{{film.summary}}</span>
                 </span>
-              </p>
-            </section>
-          </li>
-          {% endfor %}
-        </ul>
-        <br /><br />
+                <span class="film-card-watchdate">{% if film.rewatch == "No" %}Watched {% else %}Rewatched {% endif %}on {{film.watcheddate|strftime}}</span>
+                  <span class="film-card-review">{{film.summary}}</span>
+              </span>
+            </p>
+      </section>
+      </li>
+      {% endfor %}
+      </ul>
+      <br /><br />
       </section>
     </article>
   </div>
