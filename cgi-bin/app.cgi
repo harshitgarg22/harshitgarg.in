@@ -24,6 +24,8 @@ class ProxyFix(object):
 if __name__ == '__main__':
     app.wsgi_app = ProxyFix(app.wsgi_app)
     CGIHandler().run(app)
+    os.mknod('./hey.txt')
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
-CGIHandler.run(app)
+CGIHandler().run(app)
+
