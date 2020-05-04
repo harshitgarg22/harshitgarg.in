@@ -5,6 +5,6 @@ cgi-bin/.venv
 cgi-bin/__pycache__
 .ftpquota
 .htaccess
-tmp/
-images/
+./tmp/
+./images/
 under-construction.gif
