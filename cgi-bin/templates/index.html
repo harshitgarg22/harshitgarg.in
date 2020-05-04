@@ -28,12 +28,15 @@
       <li>
         <a href="#internships" onclick="javascript:;" class="nav-element">internships</a>
       </li>
-      <li>
+      <!-- <li>
         <a href="#books" onclick="javascript:;" class="nav-element">books</a>
-      </li>
+      </li> -->
       <li>
         <a href="#films" onclick="javascript:;" class="nav-element">films</a>
       </li>
+    </ul>
+    <ul id="social-list">
+      <li></li>
     </ul>
   </nav>
   <div id="main-content">
@@ -48,10 +51,10 @@
     </div>
     <article id="article-content">
       <section name="me">
-        <h1 class="sub-headings">me</h1>
+        <a name="me"><h1 class="sub-headings">me</h1></a>
         <hr />
         <br /><br />
-        <figure id="me">
+        <figure id="me-figure">
           <img src="/static/images/me.jpg" alt="A photo of me circa 2019" title="A photo of me circa 2019" />
           <figcaption>
             me, <span style="font-style: italic;">circa 2019</span>
@@ -76,7 +79,7 @@
       </section>
       <section name="projects">
         <br /><br />
-        <h1 class="sub-headings">projects</h1>
+        <a name="projects"><h1 class="sub-headings">projects</h1></a>
         <hr />
         <ul id="project-list">
           {% for project in projects %}
@@ -108,47 +111,52 @@
       </section>
       <section name="#internships">
         <br />
-        <h1 class="sub-headings">internships</h1>
+        <a name="internships"><h1 class="sub-headings">internships</h1></a>
         <hr />
         <br /><br />
         <em>cough </em>PS-1<em> cough</em>
       </section>
-      <section name="books">
+      <!-- <section name="books">
         <br /><br />
         <h1 class="sub-headings">books</h1>
         <hr />
         <br /><br />
-      </section>
+      </section> -->
       <br /><br />
       <section name="films">
         <a name="films">
           <h1 class="sub-headings">films</h1>
         </a>
         <hr />
+        <span
+          style="font-style: italic; opacity: 0.7; font-family: Volkorn, serif; margin-top: 1em; display: block;">I'm on
+          letterboxd <a href="https://www.letterboxd.com/harshitgarg"
+            style="text-decoration: none; color: black; font-weight: bold; opacity: 1;">@harshitgarg</a></span>
         <ul id="film-list">
           {% for film in films[:5] %}
           <li>
             <section>
-            <p class='film-card'>
-              <img src={{film.imgsrc}}  class='film-card-image'/>
-              <span class="film-card-description">
-                <span><a class='film-card-title' href="{{film.link}}">{{film.title}}</a>
-                  <span class="film-card-year">{{film.year}}</span></span>
-                <span class='stars'>
-                  {% for count in range(film.rating|int) %}&#9733;{% endfor %}
-                  {% if film.rating|float != film.rating|int %}
-                  &frac12;
-                  {% endif %}
-                </span>
-                <span class="film-card-watchdate">{% if film.rewatch == "No" %}Watched {% else %}Rewatched {% endif %}on {{film.watcheddate|strftime}}</span>
+              <p class='film-card'>
+                <img src={{film.imgsrc}} class='film-card-image' />
+                <span class="film-card-description">
+                  <span><a class='film-card-title' href="{{film.link}}">{{film.title}}</a>
+                    <span class="film-card-year">{{film.year}}</span></span>
+                  <span class='stars'>
+                    {% for count in range(film.rating|int) %}&#9733;{% endfor %}
+                    {% if film.rating|float != film.rating|int %}
+                    &frac12;
+                    {% endif %}
+                  </span>
+                  <span class="film-card-watchdate">{% if film.rewatch == "No" %}Watched {% else %}Rewatched
+                    {% endif %}on {{film.watcheddate|strftime}}</span>
                   <span class="film-card-review">{{film.summary}}</span>
-              </span>
-            </p>
-      </section>
-      </li>
-      {% endfor %}
-      </ul>
-      <br /><br />
+                </span>
+              </p>
+            </section>
+          </li>
+          {% endfor %}
+        </ul>
+        <br /><br />
       </section>
     </article>
   </div>
