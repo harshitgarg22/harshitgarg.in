@@ -48,11 +48,14 @@ hr {
   font-size: 0.9em;
 }
 
-.description {
+.me-description {
   hyphens: auto;
   font-size: calc(1em + 0.5vw);
 }
-
+.me-description a{
+  text-decoration: none;
+  color: darkred;
+}
 
 .github-icon {
   background: url(/static/icons/github.svg) center left no-repeat;
