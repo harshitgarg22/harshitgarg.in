@@ -52,3 +52,20 @@ hr {
   hyphens: auto;
   font-size: calc(1em + 0.5vw);
 }
+
+
+.github-icon {
+  background: url(/static/icons/github.svg) center left no-repeat;
+}
+
+.link-icon {
+  background: url(/static/icons/link-solid.svg) center left no-repeat;
+}
+
+.mail-icon {
+  background: url(/static/icons/mail.svg) center left no-repeat;
+}
+
+.telegram-icon {
+  background: url(/static/icons/telegram.svg) center left no-repeat;
+}
