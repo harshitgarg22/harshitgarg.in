@@ -28,15 +28,18 @@ def quantum():
 def getFilms():
     films = []
 
-    with open(os.path.join("cgi-bin", "assets", "data", "filmData.json", "r")) as f:
+    with open(os.path.join("cgi-bin", "assets", "data", "filmData.json"), "r") as f:
         films = json.load(f)
 
     return films
 
 @app.template_filter('strftime')
 def _jinja2_filter_datetime(date, fmt=None):
-    date = datetime.datetime.strptime(date, "%Y-%m-%d")
-    return date.strftime("%b %d, %Y")
+    try:
+        date = datetime.datetime.strptime(date, "%Y-%m-%d")
+        return date.strftime("%b %d, %Y")
+    except TypeError:
+        print(TypeError)
 
 def getProjects():
     projects = []
