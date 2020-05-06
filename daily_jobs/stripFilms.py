@@ -57,14 +57,14 @@ def stripFilms(filmRawData):
     films = []
     open('./error.json', 'w').close()
     for eachFilm in filmRawData["entries"]:
-        safe_html = sanitize_html(eachFilm.get("summary"))
+        safe_html = BSHTML(eachFilm.get("summary"), 'html.parser')
         try:
             # A really complex parsing with no documentation and bad variable name muhahahahahahaha
             # soup = (''.join(str(z) for a in [x for x in safe_html.find_all('p')] for z in a))
-            # soup = [y for x in safe_html.find_all('p')[1:] for y in x.contents]
+            soup = [y for x in safe_html.find_all('p')[1:] for y in x.contents]
             # soup = []
-            review = (''.join(str(y) for a in [x.contents for x in safe_html.find_all('p')[1:]] for y in a)).replace('<br/>', '\n\n')
-
+            # review = (''.join(str(y) for a in [x.contents for x in safe_html.find_all('p')[1:]] for y in a)).replace('<br/>', '\n\n')
+            review = str(soup)
             # for x in safe_html.find_all('p')[1:]:
             #     for y in x.contents:
             #         soup.append(y)
