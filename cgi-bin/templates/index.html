@@ -160,10 +160,12 @@
                     {% endif %}on {{film.watcheddate|strftime}}</span>
                   <span class="film-card-review">
                     {% for eachEle in film.summary %}
-                    {% if (eachEle) == '<br/>' %}
+                    {% if eachEle == '<br/>' %}
                     <br />
+                    {% elif eachEle == '<p/>' %}
+                    <br /><span style="display:block; margin: 0.2em;"></span>
                     {% else %}
-                      {{eachEle}}
+                    {{eachEle}}
                     {% endif %}
                     {% endfor %}</span>
                 </span>
