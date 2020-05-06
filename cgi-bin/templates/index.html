@@ -71,8 +71,12 @@
           </figure>
           <div class="me-description"><br />
             <p>I'm a sophomore at BITS Pilani, Pilani Campus, majoring in Computer Science.</p>
-            <p>Currently I've been toying around with the fields of Natural Language Processing and <a href={{url_for("quantum")}}>Quantum Computing</a>. I've also been learning web development for the purpose of <a href="#projects">some projects</a> (including this website).</p>
-            <p>Additionally, I'm a sucker for all things GNU/Linux <small>(hehe)</small> and making arbitrary, useless scripts for fiddling with stuff on the web. My current daily driver is Solus 4.0 <small>(not solaris)</small>, with the always reliable Budgie DE.</p>
+            <p>Currently I've been toying around with the fields of Natural Language Processing and <a
+                href={{url_for("quantum")}}>Quantum Computing</a>. I've also been learning web development for the
+              purpose of <a href="#projects">some projects</a> (including this website).</p>
+            <p>Additionally, I'm a sucker for all things GNU/Linux <small>(hehe)</small> and making arbitrary, useless
+              scripts for fiddling with stuff on the web. My current daily driver is Solus 4.0 <small>(not
+                solaris)</small>, with the always reliable Budgie DE.</p>
           </div>
         </div>
       </section>
@@ -154,7 +158,14 @@
                   </span>
                   <span class="film-card-watchdate">{% if film.rewatch == "No" %}Watched {% else %}Rewatched
                     {% endif %}on {{film.watcheddate|strftime}}</span>
-                  <span class="film-card-review">{{film.summary}}</span>
+                  <span class="film-card-review">
+                    {% for eachEle in film.summary %}
+                    {% if (eachEle) == '<br/>' %}
+                    <br />
+                    {% else %}
+                      {{eachEle}}
+                    {% endif %}
+                    {% endfor %}</span>
                 </span>
               </p>
             </section>
