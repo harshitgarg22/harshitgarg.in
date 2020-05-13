@@ -5,7 +5,7 @@ import datetime
 import sentry_sdk 
 from sentry_sdk.integrations.flask import FlaskIntegration
 
-# sentry_sdk.init(dsn="https://4ca333b6023a4503a94b63b58f1b775c@o391718.ingest.sentry.io/5238246", integrations=[FlaskIntegration()])
+sentry_sdk.init(dsn="https://4ca333b6023a4503a94b63b58f1b775c@o391718.ingest.sentry.io/5238246", integrations=[FlaskIntegration()])
 
 app = Flask(__name__, static_folder="./assets", static_url_path="/static")
 
