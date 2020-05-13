@@ -2,6 +2,10 @@ from flask import Flask, render_template, url_for, redirect
 import json
 import os
 import datetime
+import sentry_sdk 
+from sentry_sdk.integrations.flask import FlaskIntegration
+
+# sentry_sdk.init(dsn="https://4ca333b6023a4503a94b63b58f1b775c@o391718.ingest.sentry.io/5238246", integrations=[FlaskIntegration()])
 
 app = Flask(__name__, static_folder="./assets", static_url_path="/static")
 
@@ -35,6 +39,10 @@ def getFilms():
         films = json.load(f)
 
     return films
+
+@app.route('/debug-sentry')
+def trigger_error():
+    division_by_zero = 1 / 0
 
 @app.template_filter('strftime')
 def _jinja2_filter_datetime(date, fmt=None):
