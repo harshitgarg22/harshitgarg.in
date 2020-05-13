@@ -1,4 +1,4 @@
-#!/home/kadk4sx1m1i5/.local/bin/python3
+#!/home/kadk4sx1m1i5/harshitgarg.in/cgi-bin/.venv/bin/python3
 
 import os
 import sys
@@ -27,4 +27,3 @@ if __name__ == '__main__':
 
 app.wsgi_app = ProxyFix(app.wsgi_app)
 CGIHandler().run(app)
-
