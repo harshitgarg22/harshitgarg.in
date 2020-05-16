@@ -6,6 +6,6 @@ cgi-bin/__pycache__
 .ftpquota
 .htaccess
 tmp/
-images/
+./images/
 under-construction.gif
 website.png
