@@ -1,9 +1,9 @@
-#!~/.local/bin/python3
+#!/home/kadk4sx1m1i5/.local/bin/python3
 
 import os
 import sys
 
-sys.path.insert(0, '~/harshitgarg.in/cgi-bin/.venv/lib/python3.5/site-packages')
+sys.path.insert(0, '/home/kadk4sx1m1i5/harshitgarg.in/cgi-bin/.venv/lib/python3.5/site-packages')
 
 from wsgiref.handlers import CGIHandler
 from app import app
