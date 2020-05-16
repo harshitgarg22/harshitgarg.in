@@ -47,8 +47,6 @@
   color: #811808;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: bold;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
-    0px -1px 0px rgba(0, 0, 0, 0.7);
   opacity: 0.8;
   float: right;
 }
