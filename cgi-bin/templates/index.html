@@ -64,7 +64,7 @@
         <hr />
         <div style="display: block;">
           <figure id="me-figure">
-            <img src="/static/images/me.jpg" alt="A photo of me circa 2019" title="A photo of me circa 2019" />
+            <img src="/static/images/me.jpg" alt="A photo of me circa 2019" title="A photo of me circa 2019" loading="lazy"/>
             <figcaption>
               me, <span style="font-style: italic;">circa 2019</span>
             </figcaption>
@@ -146,7 +146,7 @@
           <li>
             <section>
               <p class='film-card'>
-                <img src={{film.imgsrc}} class='film-card-image' />
+                <img src={{film.imgsrc}} class='film-card-image' alt="Film poster for {{film.title}}"/>
                 <span class="film-card-description">
                   <span><a class='film-card-title' href="{{film.link}}">{{film.title}}</a>
                     <span class="film-card-year">{{film.year}}</span></span>
