@@ -15,8 +15,9 @@ def home():
     greetings = generateGreetings()
     projects = getProjects()
     films = getFilms()
+    internships = getInternships()
     
-    return render_template("index.html", greetings=greetings, projects=projects, films=films)
+    return render_template("index.html", greetings=greetings, projects=projects, films=films, internships=internships)
 
 @app.route("/saumi")
 def saumi():
@@ -75,10 +76,9 @@ def getProjects():
 
 
 def getInternships():
-    internships = {}
+    internships = []
 
-    internships["name"] = []
-    internships["description"] = []
+    return internships
 
 
 def generateGreetings():

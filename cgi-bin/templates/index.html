@@ -23,6 +23,9 @@
 
   <link rel="preload" href="static/css/films.css" as="style" onload="this.onload=null;">
   <link rel="stylesheet" href="static/css/films.css" />
+  
+  <link rel="preload" href="static/css/internships.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/internships.css" />
 
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" as="style"
     onload="this.onload=null;">
@@ -144,8 +147,18 @@
           <h1 class="sub-headings">internships</h1>
         </a>
         <hr />
-        <br /><br />
-        <em>cough </em>PS-1<em> cough</em>
+        <ul id="internship-list">
+          {% for internship in internships %}
+          <li>
+            <section>
+              <h1 class="internship-name">{{internship.name}}</h1>
+              <p class="internship-company">with <span style="font-weight: 600;">{{internship.company}}</span></p>
+              <p class="internship-project_name">on <span style="font-weight: 600;">{{internship.project_name}}</span></p>
+              <p class="internship-project_time">{{internship.project_begin}} - {{internship.project_end}}</p>
+              <p class="internship-description">{{internship.description}}</p>
+            </section>
+          </li>{% endfor %}
+        </ul>
       </section>
       <!-- <section name="books">
         <br /><br />
