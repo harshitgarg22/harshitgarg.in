@@ -78,6 +78,15 @@ def getProjects():
 def getInternships():
     internships = []
 
+    internships.append({
+        "name": "Practice School-1",
+        "company": "UST Global, Trivandrum",
+        "project_name": "Quantum Distribution Networks",
+        "project_begin": "2020-05-18",
+        "project_end": "Present",
+        "description": "We are currently studying about the possibilites of migrating the current Public Key Infrastructure to become \"Quantum Safe\"."
+    })
+
     return internships
 
 
