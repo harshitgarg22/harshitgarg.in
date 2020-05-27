@@ -33,14 +33,6 @@ def afort():
 def quantum():
     return redirect("https://github.com/harshitgarg22/quantum")
 
-def getFilms():
-    films = []
-
-    with open(os.path.join("assets", "data", "filmData.json"), "r") as f:
-        films = json.load(f)
-
-    return films
-
 @app.template_filter('strftime')
 def _jinja2_filter_datetime(date, fmt=None):
     try:
@@ -48,6 +40,14 @@ def _jinja2_filter_datetime(date, fmt=None):
         return date.strftime("%b %d, %Y")
     except TypeError:
         print(TypeError)
+
+def getFilms():
+    films = []
+
+    with open(os.path.join("assets", "data", "filmData.json"), "r") as f:
+        films = json.load(f)
+
+    return films
 
 def getProjects():
     projects = []
