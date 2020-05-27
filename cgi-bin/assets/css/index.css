@@ -72,3 +72,7 @@ hr {
 .telegram-icon {
   background: url(/static/icons/telegram.svg) center left no-repeat;
 }
+
+.pdf-icon {
+  background: url(/static/icons/pdf.svg) center left no-repeat;
+}
