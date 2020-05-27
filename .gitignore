@@ -3,6 +3,7 @@
 *.pyc
 cgi-bin/.venv
 cgi-bin/__pycache__
+cgi-bin/app.cgi
 .ftpquota
 .htaccess
 tmp/
