@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for, redirect
+from flask import Flask, render_template, url_for, redirect, send_file
 import json
 import os
 import datetime
@@ -32,6 +32,11 @@ def afort():
 @app.route("/quantum")
 def quantum():
     return redirect("https://github.com/harshitgarg22/quantum")
+
+@app.route("/resume")
+@app.route("/cv")
+def resume():
+    return send_file(os.path.join('assets', 'docs', 'cv.pdf'))
 
 @app.template_filter('strftime')
 def _jinja2_filter_datetime(date, fmt=None):
