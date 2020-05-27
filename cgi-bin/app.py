@@ -41,10 +41,6 @@ def getFilms():
 
     return films
 
-@app.route('/debug-sentry')
-def trigger_error():
-    division_by_zero = 1 / 0
-
 @app.template_filter('strftime')
 def _jinja2_filter_datetime(date, fmt=None):
     try:
