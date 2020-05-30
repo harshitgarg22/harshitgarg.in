@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ode to the qubit</title>
+    <meta name="description" content="My misadventures as I try to measure a qubit." />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, 
+    maximum-scale=1.0/> 
+    <link rel="preload" href="static/css/quantum.css" as="style" onload="this.onload=null;">
+    <link rel="stylesheet" href="static/css/quantum.css" />
+
+</head>
+
+<body>
+    <header id="quantum-banner">
+        <span id="quantum-banner-text">/quantum</span>
+    </header>
+    <div id="container">
+        <nav class="left">
+            <ul>
+                <li><a href="#projects">projects</a></li>
+                <li><a href="#work">work</a></li>
+                <li><a href="#updates">updates</a></li>
+            </ul>
+        </nav>
+        <div class="center">
+            <article>
+                <h1 name="#projects">projects</h1>
+                <hr>
+                <h1 name="#work">work</h1>
+                <hr>
+                <h1 name="#updates">updates</h1>
+                <hr>
+            </article>
+        </div>
+        <div class="right">
+            <div id="skills">
+                <span>I have worked with </span>
+                <ul id="skills_list">
+                    <li><a href="{{url_for('qiskit')}}">qiskit</a></li>
+                    <li><a href="{{url_for('qsharp')}}">Q#</a></li>
+                    <li><a href="{{url_for('qdn')}}">Quant Distr Networks</a></li>
+                </ul>
+            </div>
+            <br/>
+            <div>
+                <span>..and have taken courses relating</span>
+                <div id="course_list">
+                    <ul>
+                        <li>Linear Algebra</li>
+                        <li>Complex Analysis</li>
+                        <li>Quantum Info & Comp</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
