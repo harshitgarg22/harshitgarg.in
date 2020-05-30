@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+#film-list {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+#film-list > li section {
+  padding-top: 0.5em;
+}
+
+.film-card {
+  background-color: #2c3440;
+  display: flex;
+  flex-direction: row;
+  padding: 1.5em;
+  border-radius: 10px;
+  margin: 0px;
+  box-shadow: inset 0 0 3px #000;
+}
+
+.film-card-title {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  color: #fff;
+  font-size: 1.5em;
+}
+
+.film-card-title:hover {
+  color: #40bcf4;
+}
+
+.film-card-year {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+.film-card-description {
+  margin-left: 1em;
+  color: #9ab;
+  display: flex;
+  flex-direction: column;
+}
+
+.film-card-watchdate {
+  opacity: 0.7;
+  font-style: italic;
+  font-size: x-small;
+  float: right;
+}
+
+.film-card-image {
+  border-radius: 4px;
+  width: 10em;
+  height: 15em;
+  float: left;
+}
+
+.film-card-review {
+  font-size: 0.85rem;
+  margin-top: 1em;
+}
+
+.stars {
+  color: #6de155;
+  margin-top: 0em;
+}

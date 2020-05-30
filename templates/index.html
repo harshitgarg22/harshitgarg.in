@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Harshit Garg</title>
+  <meta name="description"
+    content="Harshit Garg is a CompSci undergrad at BITS Pilani, Pilani Campus, interested about anything Computer Science. Especially Quantum Computing." />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preload" href="static/css/nav.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/nav.css" />
+
+  <link rel="preload" href="static/css/index.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/index.css" />
+
+  <link rel="preload" href="static/css/greetings.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/greetings.css" />
+
+  <link rel="preload" href="static/css/projects.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/projects.css" />
+
+  <link rel="preload" href="static/css/films.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/films.css" />
+  
+  <link rel="preload" href="static/css/internships.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/internships.css" />
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" as="style"
+    onload="this.onload=null;">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" as="style"
+    onload="this.onload=null;">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap" rel="stylesheet" />
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" as="style"
+    onload="this.onload=null;">
+  <link href="https://fonts.googleapis.com/css2?family=Vollkorn:ital@0;1&display=swap" rel="stylesheet" />
+
+  <link rel="shortcut icon" type="image/png" href="static/icons/tardis.png" />
+</head>
+
+<body onload="displayGreetings(greetings)">
+  <nav id="vertical-nav">
+    <ul id="nav-list">
+      <li>
+        <a href="#me" onclick="javascript:;" class="nav-element">me</a>
+      </li>
+      <li>
+        <a href="#projects" onclick="javascript:;" class="nav-element">projects</a>
+      </li>
+      <li>
+        <a href="#internships" onclick="javascript:;" class="nav-element">internships</a>
+      </li>
+      <!-- <li>
+        <a href="#books" onclick="javascript:;" class="nav-element">books</a>
+      </li> -->
+      <li>
+        <a href="#films" onclick="javascript:;" class="nav-element">films</a>
+      </li>
+    </ul>
+    <ul id="social-list">
+      <li style="font-size: 1.2em; margin-bottom: 2em;"><i class="pdf-icon" title="pdf"></i><a href={{url_for("resume")}} style="color: #6b0000; font-family: 'Noto Serif', serif">Here's my CV</a></li>
+      <li><i class="github-icon" title="github"></i><a href="https://github.com/harshitgarg22">/harshitgarg22</a></li>
+      <li><i class="mail-icon" title="mail"></i><a href="mailto:hg1229@gmail.com">hg1229@gmail.com</a></li>
+      <li><i class="telegram-icon" title="telegram"></i><a href="https://t.me/harshitgarg22">@harshitgarg22</a></li>
+      <li><span
+          style="opacity: 0.5; margin-top:2em; display:inline-block; font-style: italic;font-family: Vollkorn, serif;">Find
+          this website on&nbsp; </span><a href="https://github.com/harshitgarg22/harshitgarg.in"
+          style="text-decoration: none; color: black;font-family: Vollkorn, serif;margin-top:2em; display:inline-block;">GitHub</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="main-content">
+    <div id="greetings">
+      <!-- <div id="greetings-header">&NonBreakingSpace;</div> -->
+      <div id="greetings-command">
+        <div id="greetings-command-prefix">print(</div>
+        <div id="greetings-command-display">Hello World</div>
+        <div id="greetings-command-suffix">)</div>
+      </div>
+      <div id="greetings-language">python</div>
+    </div>
+    <article id="article-content">
+      <section name="me">
+        <a name="me">
+          <h1 class="sub-headings">me</h1>
+        </a>
+        <hr />
+        <div style="display: block;">
+          <figure id="me-figure">
+            <img src="/static/images/me.jpg" alt="A photo of me circa 2019" title="A photo of me circa 2019"
+              loading="lazy" width="10%" height="20%" />
+            <figcaption>
+              me, <span style="font-style: italic;">circa 2019</span>
+            </figcaption>
+          </figure>
+          <div class="me-description"><br />
+            <p>I'm a sophomore at BITS Pilani, Pilani Campus, majoring in Computer Science.</p>
+            <p>Currently I've been toying around with the fields of Natural Language Processing and <a
+                href={{url_for("quantum")}}>Quantum Computing</a>. I've also been learning web development for the
+              purpose of <a href="#projects">some projects</a> (including this website).</p>
+            <p>Additionally, I'm a sucker for all things GNU/Linux <small>(hehe)</small> and making arbitrary, useless
+              scripts for fiddling with stuff on the web. My current daily driver is Solus 4.0 <small>(not
+                solaris)</small>, with the always reliable Budgie DE.</p>
+          </div>
+        </div>
+      </section>
+      <section name="projects">
+        <br /><br />
+        <a name="projects">
+          <h1 class="sub-headings">projects</h1>
+        </a>
+        <hr />
+        <ul id="project-list">
+          {% for project in projects %}
+          <li>
+            <section>
+              <h1 class="project-name">
+                {{project.name}}
+              </h1>
+              <p class="project-description">
+                {{project.description}}
+              </p>
+              <p class="project-github">
+                {% if 'github' in project %}
+                <a href="{{project.github}}"><i class="github-icon"></i>GitHub</a>
+                {% endif %}
+              </p>
+              <p class="project-link">
+                {% if 'link' in project %}
+                <a href="{{project.link}}"><i class="link-icon"></i>Link</a>
+                {% endif %}
+              </p>
+              <p class="project-tags">
+                tags: {% for tag in project.tags %} {{ tag }} {% endfor %}
+              </p>
+            </section>
+          </li>
+          {% endfor %}
+        </ul>
+      </section>
+      <section name="#internships">
+        <br />
+        <a name="internships">
+          <h1 class="sub-headings">internships</h1>
+        </a>
+        <hr />
+        <ul id="internship-list">
+          {% for internship in internships %}
+          <li>
+            <section>
+              <h1 class="internship-name">{{internship.name}}</h1>
+              <p class="internship-company">with <span style="font-weight: 600;">{{internship.company}}</span></p>
+              <p class="internship-project_name">on <span style="font-weight: 600;">{{internship.project_name}}</span></p>
+              <p class="internship-project_time">{{internship.project_begin}} - {{internship.project_end}}</p>
+              <p class="internship-description">{{internship.description}}</p>
+            </section>
+          </li>{% endfor %}
+        </ul>
+      </section>
+      <!-- <section name="books">
+        <br /><br />
+        <h1 class="sub-headings">books</h1>
+        <hr />
+        <br /><br />
+      </section> -->
+      <br /><br />
+      <section name="films">
+        <a name="films">
+          <h1 class="sub-headings">films</h1>
+        </a>
+        <hr />
+        <span style="font-style: italic; font-family: Volkorn, serif; margin-top: 1em;display:block;    text-shadow: 0px 1px 0px rgba(255,255,255,.3), 0px -1px 0px rgba(0,0,0,.7);
+        "><i
+            style="background: url(/static/icons/letterboxd.ico) center left no-repeat; background-size: 1em;padding-left: 1.3em; opacity: 1;"></i><span
+            style="opacity: 0.5;">I'm on
+            letterboxd </span><a href="https://www.letterboxd.com/harshitgarg"
+            style="text-decoration: none; color: black; font-weight: bold; opacity: 1;">@harshitgarg</a></span>
+        <ul id="film-list">
+          {% for film in films[:5] %}
+          <li>
+            <section>
+              <p class='film-card'>
+                <img src={{film.imgsrc}} class='film-card-image' alt="Film poster for {{film.title}}" />
+                <span class="film-card-description">
+                  <span><a class='film-card-title' href="{{film.link}}">{{film.title}}</a>
+                    <span class="film-card-year">{{film.year}}</span></span>
+                  <span class='stars'>
+                    {% for count in range(film.rating|int) %}&#9733;{% endfor %}
+                    {% if film.rating|float != film.rating|int %}
+                    &frac12;
+                    {% endif %}
+                  </span>
+                  <span class="film-card-watchdate">{% if film.rewatch == "No" %}Watched {% else %}Rewatched
+                    {% endif %}on {{film.watcheddate|strftime}}</span>
+                  <span class="film-card-review">
+                    {% for eachEle in film.summary %}
+                    {% if eachEle == '<br/>' %}
+                    <br />
+                    {% elif eachEle == '<p/>' %}
+                    <br /><span style="display:block; margin: 0.2em;"></span>
+                    {% else %}
+                    {{eachEle}}
+                    {% endif %}
+                    {% endfor %}</span>
+                </span>
+              </p>
+            </section>
+          </li>
+          {% endfor %}
+        </ul>
+        <br /><br />
+      </section>
+    </article>
+  </div>
+</body>
+
+<script type="text/javascript">
+  greetings = {{ greetings | tojson }}
+</script>
+<script src="static/js/text_scramble.js"></script>
+<script src="static/js/index.js"></script>
+
+</html>

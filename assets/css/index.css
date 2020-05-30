@@ -1,0 +1,78 @@
+/* Color Palettes 
+    Morning Espresso: #332a1a #7c5b41 #efdcd3 #aa574b #541c13
+    On the telly: #161514 #b85c3c #e5af7d #fff6e9 #9bceb5
+*/
+
+body {
+  background-color: #fff6e9;
+  display: flex;
+}
+
+#main-content{
+  width: 65%;
+  margin-top: 7%;
+}
+
+#article-content {
+  font-family: "Noto Serif", serif;
+  margin-left: 2em;
+}
+
+.sub-headings {
+  font-size: 3vw;
+  color: darkred;
+  margin-bottom: 3vh;
+}
+
+hr {
+  width: 60vw;
+  height: 5px;
+  background-color: darkred;
+}
+
+#me-figure {
+  width: fit-content;
+  height: fit-content;
+  float: left;
+  margin-bottom: 0px;
+}
+
+#me-figure > img {
+  width: 20em;
+  height: auto;
+}
+
+#me-figure > figcaption {
+  text-align: center;
+  margin-top: 1em;
+  font-size: 0.9em;
+}
+
+.me-description {
+  hyphens: auto;
+  font-size: calc(1em + 0.5vw);
+}
+.me-description a{
+  text-decoration: none;
+  color: darkred;
+}
+
+.github-icon {
+  background: url(/static/icons/github.svg) center left no-repeat;
+}
+
+.link-icon {
+  background: url(/static/icons/link-solid.svg) center left no-repeat;
+}
+
+.mail-icon {
+  background: url(/static/icons/mail.svg) center left no-repeat;
+}
+
+.telegram-icon {
+  background: url(/static/icons/telegram.svg) center left no-repeat;
+}
+
+.pdf-icon {
+  background: url(/static/icons/pdf.svg) center left no-repeat;
+}
