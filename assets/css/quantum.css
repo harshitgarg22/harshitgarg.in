@@ -84,7 +84,6 @@ a{
 }  
 
 .right{
-  flex-basis: 20%;
   flex-shrink: 1;
   font-family: 'IBM Plex Serif', serif;
   padding: 1em;
