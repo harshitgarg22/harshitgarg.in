@@ -36,7 +36,7 @@ def quantum():
 @app.route("/resume")
 @app.route("/cv")
 def resume():
-    return send_file(os.path.join('assets', 'docs', 'cv.pdf'))
+    return send_file(os.path.join('.','assets', 'docs', 'cv.pdf'))
 
 @app.template_filter('strftime')
 def _jinja2_filter_datetime(date, fmt=None):
