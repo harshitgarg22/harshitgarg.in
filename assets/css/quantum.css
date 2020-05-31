@@ -67,16 +67,21 @@ a{
   padding: 1em;
   margin-top: 0em;
   padding-top: 0em;
-}  
+} 
 
-.center > article > h1 {
+.center > article > div {
+  margin-bottom: 2em;
+}
+
+.center > article > div > h1 {
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 600;
   font-size: 3em;
   margin-bottom: 0em;
+  margin-top: 0px;
 }  
 
-.center > article > hr{
+.center > article > div > hr{
   margin-top: 0em;
   background-color: #000;
   height: 0.5em;
@@ -111,7 +116,28 @@ a{
   color: #f5f5f5;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 830px) and (min-width: 666px){
+  .left{
+    display: none;
+  }
+  #quantum-banner{
+    width: 100%;
+    left: 0;
+    position: fixed;
+  }
+  .right{
+    margin-left: 0px;
+    padding-left: 0px;
+  }
+  .center{
+    margin-right: 0px;
+  }
+  .spacer{
+    height: 7em;
+  }
+}
+
+@media screen and (max-width: 666px){
   .left{
     display: none;
   }
@@ -122,5 +148,9 @@ a{
   #quantum-banner{
     width: 100%;
     left: 0;
+    position: fixed;
+  }
+  .spacer{
+    height: 7em;
   }
 }
