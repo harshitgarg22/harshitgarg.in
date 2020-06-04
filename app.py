@@ -1,4 +1,5 @@
 from flask import Flask, render_template, url_for, redirect, send_file
+from flask_misaka import Misaka
 import json
 import os
 import datetime
@@ -8,6 +9,7 @@ from sentry_sdk.integrations.flask import FlaskIntegration
 sentry_sdk.init(dsn="https://4ca333b6023a4503a94b63b58f1b775c@o391718.ingest.sentry.io/5238246", integrations=[FlaskIntegration()])
 
 app = Flask(__name__, static_folder="./assets", static_url_path="/static")
+Misaka(app)
 
 if __name__ == "main":
     app.run(host="0.0.0.0")
@@ -33,7 +35,14 @@ def afort():
 
 @app.route("/quantum")
 def quantum():
-    return render_template("quantum.html")
+    worksAll = getWorks()
+    works = []
+    
+    for work in worksAll:
+        if "quantum" in work["domain"]:
+            works.append(work)
+            
+    return render_template("quantum.html", works = works)
 
 @app.route("/quantum/qiskit")
 def qiskit():
@@ -59,6 +68,14 @@ def _jinja2_filter_datetime(date, fmt=None):
         return date.strftime("%b %d, %Y")
     except TypeError:
         print(TypeError)
+
+def getWorks():
+    works = []
+
+    with open(os.path.join("assets", "data", "works.json"), "r") as f:
+        works = json.load(f)
+
+    return works
 
 def getFilms():
     films = []
