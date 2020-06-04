@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
     <link rel=" preload" href="static/css/quantum.css" as="style" onload="this.onload=null;">
     <link rel="stylesheet" href="static/css/quantum.css" />
+    <link rel="shortcut icon" type="image/png" href="static/icons/zeroket.png" />
 
 </head>
 
@@ -27,18 +28,28 @@
         </nav>
         <div class="center">
             <article>
-                <div>
-                    <h1 name="#projects">projects</h1>
+                <section>
+                    <h1 id="#projects">projects</h1>
                     <hr>
-                </div>
-                <div>
-                    <h1 name="#work">work</h1>
+                </section>
+                <section>
+                    <h1 id="#work">work</h1>
                     <hr>
-                </div>
-                <div>
-                    <h1 name="#updates">updates</h1>
+                    <div id="work-list">
+                        {% for work in works %}
+                        <h2 class="work-name">{{ work.name }}</h2>
+                        <div class="work-content">
+                            <p class="work-company">at {{ work.company }}</p>
+                            <p class="work-duration">{{ work.dateStart }} - {{ work.dateEnd }}</p>
+                            <div class="work-description">{{ work.description | markdown }}</div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </section>
+                <section>
+                    <h1 id="#updates">updates</h1>
                     <hr>
-                </div>
+                </section>
             </article>
         </div>
         <div class="right">
@@ -47,13 +58,13 @@
                 <ul id="skills_list">
                     <li><a href="{{url_for('qiskit')}}">qiskit</a></li>
                     <li><a href="{{url_for('qsharp')}}">Q#</a></li>
-                    <li><a href="{{url_for('qdn')}}">Quant Distr Networks</a></li>
+                    <li><a href="">Quant Distr Networks</a></li>
                 </ul>
             </div>
             <br />
             <div>
                 <span>..and have taken courses relating</span>
-                <div id="course_list">
+                <div id="course-list">
                     <ul>
                         <li>Linear Algebra</li>
                         <li>Complex Analysis</li>
