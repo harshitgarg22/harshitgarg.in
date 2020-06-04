@@ -41,8 +41,15 @@ def quantum():
     for work in worksAll:
         if "quantum" in work["domain"]:
             works.append(work)
-            
-    return render_template("quantum.html", works = works)
+
+    updatesAll = getUpdates()
+    updates = []
+
+    for update in updatesAll:
+        if "quantum" in update["domain"]:
+            updates.append(update)
+
+    return render_template("quantum.html", works = works, updates = updates)
 
 @app.route("/quantum/qiskit")
 def qiskit():
@@ -68,6 +75,14 @@ def _jinja2_filter_datetime(date, fmt=None):
         return date.strftime("%b %d, %Y")
     except TypeError:
         print(TypeError)
+
+def getUpdates():
+    updates = []
+
+    with open(os.path.join("assets", "data", "updates.json"), "r") as f:
+        updates = json.load(f)
+
+    return updates
 
 def getWorks():
     works = []

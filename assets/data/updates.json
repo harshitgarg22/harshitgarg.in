@@ -1,0 +1,18 @@
+[
+    {
+        "date": "Jun 1, 2020",
+        "description": "This draft paper of TLS1.3 w/ hybrid quantum keys by *David Steblia* of U of Waterloo seems interesting.",
+        "link": "https://dstebila.github.io/draft-stebila-tls-hybrid-design/draft-stebila-tls-hybrid-design.html",
+        "domain": [
+            "quantum"
+        ]
+    },
+    {
+        "date": "May 2020",
+        "description": "I've been learning Q# from Quantum Katas.",
+        "link": "https://github.com/harshitgarg22/QuantumKatas",
+        "domain": [
+            "quantum"
+        ]
+    }
+]

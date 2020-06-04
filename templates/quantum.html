@@ -49,6 +49,16 @@
                 <section>
                     <h1 id="#updates">updates</h1>
                     <hr>
+                    <div id="update-list">
+                        <ul>
+                            {% for update in updates %}
+                            <li><span class="update-date">{{ update.date }} </span><span
+                                    class="update-description">{{update.description | markdown}}</span>{% if "link" in update %}
+                                <span class="update-link"><a href="{{update.link}}">Link.</a></span>
+                                {% endif %}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </section>
             </article>
         </div>

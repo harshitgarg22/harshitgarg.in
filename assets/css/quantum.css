@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@700&family=IBM+Plex+Sans:wght@600&family=IBM+Plex+Serif:wght@400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Vollkorn:ital,wght@0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap");
 
 html {
   overflow-x: hidden;
@@ -125,6 +126,25 @@ a {
   font-weight: 400;
 }
 
+#update-list ul li{
+  margin-top: 0.5em;
+}
+
+.update-date {
+  font-style: italic;
+  opacity: 0.6;
+}
+
+.update-description p {
+  display: inline;
+  font-family: "Noto Serif", serif;
+}
+
+.update-link {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+}
+
 .right {
   flex-shrink: 1;
   flex-basis: 30%;
@@ -166,9 +186,11 @@ a {
     margin-left: 0px;
     flex-basis: 40%;
     padding-left: 0px;
+    flex-shrink: 0.6;
   }
   .right ul {
     padding-left: 0px;
+    margin-left: 0px;
   }
 }
 
@@ -210,5 +232,8 @@ a {
   }
   .spacer {
     height: 7em;
+  }
+  .right {
+    display: none;
   }
 }
