@@ -1,0 +1,12 @@
+[
+    {
+        "name": "PS-1 Intern",
+        "company": "UST Global, Trivandurum",
+        "description": "We are currently exploring about the systems to migrate the current Public Key Infrastructure to become \"Quantum Safe\". For this, we have worked on [liboqs](https://github.com/open-quantum-safe/liboqs) for hybrid key encryption of openSSH and Intel SGX.",
+        "dateStart": "May 2020",
+        "dateEnd": "Present",
+        "domain": [
+            "quantum"
+        ]
+    }
+]
