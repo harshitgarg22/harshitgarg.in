@@ -35,15 +35,15 @@ def afort():
 def quantum():
     return render_template("quantum.html")
 
-@app.route("/qiskit")
+@app.route("/quantum/qiskit")
 def qiskit():
     return redirect("https://github.com/harshitgarg22/quantum")
 
-@app.route("/q-sharp")
+@app.route("/quantum/q-sharp")
 def qsharp():
     return redirect("https://github.com/harshitgarg22/QuantumKatas")
 
-@app.route('/qdn')
+@app.route('/quantum/qdn')
 def qdn():
     return render_template("qdn.html")
 
