@@ -1,0 +1,27 @@
+[
+    {
+        "name": "AFORT",
+        "description": "A web repository of Attack Trees. This is part of the work I'm doing under Prof. Rajesh Kumar of BITS Pilani for attack trees.",
+        "github": "https://github.com/harshitgarg22/afort",
+        "link": "{{url_for('afort')}}",
+        "tags": [
+            "html",
+            "css",
+            "javascript",
+            "attack-trees",
+            "flask"
+        ]
+    },
+    {
+        "name": "learn-qiskit",
+        "description": "As an attempt at learning the ins and outs of qiskit, as well as to actually apply quantum computing, I'm implementing some alogrithms in qiskit.",
+        "github": "https://github.com/harshitgarg22/quantum",
+        "link": "{{url_for('quantum')}}",
+        "tags": [
+            "python",
+            "qiskit",
+            "quantum-computing",
+            "quantum"
+        ]
+    }
+]

@@ -90,6 +90,29 @@ a {
   flex-shrink: 0.5;
 }
 
+.project-name {
+  font-family: "Vollkorn", serif;
+  font-weight: 700;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.project-content{
+  margin-left: 1em;
+}
+
+.project-description p{
+  margin: 0px;
+  font-family: "Vollkorn", serif;
+  font-weight: 400;
+}
+
+.project-links{
+  margin-top: 0.5em;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
+}
+
 #work-list {
   margin-top: 1em;
 }
@@ -185,7 +208,7 @@ footer {
   padding: 1em;
 }
 
-.footer-icon{
+.footer-icon {
   color: white;
   padding: 0.7em;
   margin-right: 0.5em;
@@ -194,7 +217,7 @@ footer {
   border-radius: 50%;
 }
 
-.footer-icon:hover{
+.footer-icon:hover {
   opacity: 1;
 }
 

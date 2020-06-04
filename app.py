@@ -49,7 +49,14 @@ def quantum():
         if "quantum" in update["domain"]:
             updates.append(update)
 
-    return render_template("quantum.html", works = works, updates = updates)
+    projectsAll = getProjects()
+    projects = []
+
+    for project in projectsAll:
+        if "quantum" in project["tags"]:
+            projects.append(project)
+
+    return render_template("quantum.html", works = works, updates = updates, projects = projects)
 
 @app.route("/quantum/qiskit")
 def qiskit():
@@ -103,21 +110,8 @@ def getFilms():
 def getProjects():
     projects = []
 
-    projects.append({
-        "name": "AFORT",
-        "description": "A web repository of Attack Trees. This is part of the work I'm doing under Prof. Rajesh Kumar of BITS Pilani for attack trees.",
-        "github": "https://github.com/harshitgarg22/afort",
-        "link": url_for('afort'),
-        "tags": ["html", "css", "javascript", "attack-trees", "flask"]
-    })
-
-    projects.append({
-        "name": "learn-quantum",
-        "description": "My misadventures as I try to measure a qubit.",
-        "github": "https://github.com/harshitgarg22/quantum",
-        "link": url_for('quantum'),
-        "tags": ["python", "qiskit", "quantum-computing"]
-    })
+    with open(os.path.join("assets", "data", "projects.json"), "r") as f:
+        projects = json.load(f)
 
     return projects
 
