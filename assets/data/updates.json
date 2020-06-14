@@ -1,5 +1,12 @@
 [
     {
+        "date": "Jun 14, 2020",
+        "description": "Finally after much fumbling around with setting up Q# environment and thinking too hard about simple problems only to realize that I was, infact, thinking much too hard, I've completed the Codeforces Q# Warm-up round.",
+        "domain": [
+            "quantum"
+        ]
+    },
+    {
         "date": "Jun 1, 2020",
         "description": "This draft paper of TLS1.3 w/ hybrid quantum keys by *Douglas Steblia* of U of Waterloo seems interesting.",
         "link": "https://dstebila.github.io/draft-stebila-tls-hybrid-design/draft-stebila-tls-hybrid-design.html",
