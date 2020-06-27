@@ -23,5 +23,17 @@
             "quantum-computing",
             "quantum"
         ]
+    },
+    {
+        "name": "Quantum Image Encryption",
+        "description": "As part of my internship at UST Global, I've been implementing Quantum Image Encryption from [this](https://ieeexplore.ieee.org/document/8119911), which uses NEQR, Image Crambling, and 2-D logistic sine-map.",
+        "github": "https://github.com/harshitgarg22/quantum_image_encryption",
+        "tags": [
+            "python",
+            "qiskit",
+            "quantum-computing",
+            "quantum",
+            "encryption"
+        ]
     }
 ]
