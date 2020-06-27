@@ -2,9 +2,9 @@
     {
         "name": "PS-1 Intern",
         "company": "UST Global, Trivandurum",
-        "description": "We are currently exploring about the systems to migrate the current Public Key Infrastructure to become \"Quantum Safe\". For this, we have worked on [liboqs](https://github.com/open-quantum-safe/liboqs) for hybrid key encryption of openSSH and Intel SGX.",
+        "description": "We explored the systems to migrate the current Public Key Infrastructure to become \"Quantum Safe\" (example CQC). For this, we studied the [liboqs](https://github.com/open-quantum-safe/liboqs) project for hybrid key encryption of openSSH, and BB84 protocol. There is also an implementation of Quantum Medical Image Encryption (available [here](https://github.com/harshitgarg22/quantum_image_encryption)) that I worked on.",
         "dateStart": "May 2020",
-        "dateEnd": "Present",
+        "dateEnd": "Jun 2020",
         "domain": [
             "quantum"
         ]
