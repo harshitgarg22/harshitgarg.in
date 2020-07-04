@@ -122,9 +122,9 @@
               <h1 class="project-name">
                 {{project.name}}
               </h1>
-              <p class="project-description">
-                {{project.description}}
-              </p>
+              <div class="project-description">
+                {{project.description | markdown}}
+              </div>
               <p class="project-github">
                 {% if 'github' in project %}
                 <a href="{{project.github}}"><i class="github-icon"></i>GitHub</a>
@@ -155,9 +155,8 @@
             <section>
               <h1 class="internship-name">{{internship.name}}</h1>
               <p class="internship-company">with <span style="font-weight: 600;">{{internship.company}}</span></p>
-              <p class="internship-project_name">on <span style="font-weight: 600;">{{internship.project_name}}</span></p>
-              <p class="internship-project_time">{{internship.project_begin}} - {{internship.project_end}}</p>
-              <p class="internship-description">{{internship.description}}</p>
+              <p class="internship-project_time">{{internship.dateStart}} - {{internship.dateEnd}}</p>
+              <div class="internship-description">{{internship.description | markdown}}</div>
             </section>
           </li>{% endfor %}
         </ul>

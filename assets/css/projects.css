@@ -7,7 +7,7 @@
 
 #project-list > li section a {
   text-decoration: none;
-  margin-left: 1em;
+/*   margin-left: 1em; */
   color: #0000df;
   /* font-family: "Noto Serif", serif; */
 }
@@ -22,8 +22,8 @@
   margin-bottom: 0.5em;
 }
 
-.project-description {
-  font-style: italic;
+.project-description p{
+  font-style: oblique;
   margin-top: 0px;
   font-size: 1.2em;
   margin-left: 1em;

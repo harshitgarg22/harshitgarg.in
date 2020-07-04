@@ -7,7 +7,7 @@
 
 #internship-list > li section a {
   text-decoration: none;
-  margin-left: 1em;
+/*   margin-left: 1em; */
   color: #0000df;
   /* font-family: "Noto Serif", serif; */
 }
@@ -35,7 +35,7 @@
 
 .internship-description {
   margin-top: 0px;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-left: 1em;
 }
 
