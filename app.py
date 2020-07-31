@@ -32,7 +32,7 @@ def afort():
     return redirect("https://harshitgarg.pythonanywhere.com")
 #     return (
         "<html><body>AFORT is currently not available to the general public. If you have any queries, mail at: <em>f20180218@pilani.bits-pilani.ac.in</em></body></html>"
-    )
+#    )
 
 @app.route("/quantum")
 def quantum():
