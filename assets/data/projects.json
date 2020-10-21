@@ -13,18 +13,6 @@
         ]
     },
     {
-        "name": "learn-qiskit",
-        "description": "As an attempt at learning the ins and outs of qiskit, as well as to actually apply quantum computing, I'm implementing some alogrithms in qiskit.",
-        "github": "https://github.com/harshitgarg22/quantum",
-        "link": "{{url_for('quantum')}}",
-        "tags": [
-            "python",
-            "qiskit",
-            "quantum-computing",
-            "quantum"
-        ]
-    },
-    {
         "name": "Quantum Image Encryption",
         "description": "As part of my internship at UST Global, I've been implementing Quantum Image Encryption from [this paper](https://ieeexplore.ieee.org/document/8119911), which uses NEQR, Image Scrambling, and 2-D logistic sine-map.",
         "github": "https://github.com/harshitgarg22/quantum_image_encryption",
@@ -34,6 +22,18 @@
             "quantum-computing",
             "quantum",
             "encryption"
+        ]
+    },
+    {
+        "name": "learn-qiskit",
+        "description": "As an attempt at learning the ins and outs of qiskit, as well as to actually apply quantum computing, I'm implementing some alogrithms in qiskit.",
+        "github": "https://github.com/harshitgarg22/quantum",
+        "link": "{{url_for('quantum')}}",
+        "tags": [
+            "python",
+            "qiskit",
+            "quantum-computing",
+            "quantum"
         ]
     }
 ]
