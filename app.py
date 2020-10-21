@@ -69,8 +69,11 @@ def qsharp():
 def qdn():
     return render_template("qdn.html")
 
-@app.route("/resume")
 @app.route("/cv")
+def cv():
+    return send_file(os.path.join('.','assets', 'docs', 'cv.pdf'))
+
+@app.route("/resume")
 def resume():
     return send_file(os.path.join('.','assets', 'docs', 'cv.pdf'))
 
