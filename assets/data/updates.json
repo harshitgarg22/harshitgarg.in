@@ -1,5 +1,35 @@
 [
     {
+        "date": "Oct, 2020",
+        "description": "I've been attending [**Quantum Formalism**](https://quantumformalism.substack.com/) lectures taken by [*Bambordé Baldé*](https://twitter.com/zaikubalde) from Zaiku group. They're about the abstract math behind QC (Group theory et al.). I've applied as a moderator, so I'll be helping out people during the lecture.",
+        "domain": [
+            "quantum"
+        ]
+    },
+    {
+        "date": "Sep 1, 2020",
+        "description": "I participated in the **Qiskit India Challenge** 2020 by IBM, along with a team of 5. We used EfficientSU2, ZZFeatureMap, and COBYLA to classify 4 and 9 from the MNIST dataset.",
+        "link": "https://github.com/harshitgarg22/qiskit-india-challenge-2020",
+        "domain": [
+            "quantum"
+        ]
+    },
+    {
+        "date": "Aug, 2020",
+        "description": "I've joined [**Quantum Universal Education**](https://fullstackquantumcomputation.tech/) (funded by unitary fund) as a **Qurator**. We'll be a sort of aggregation of articles/tutorials on QC-related concepts and projects.",
+        "domain": [
+            "quantum"
+        ]
+    },
+    {
+        "date": "Jun 19, 2020",
+        "description": "I participated in the **Q# Coding Contest** Summer of 2020. It was decently hard for me. The problems also involved Q# Machine Learning libraries.",
+        "domain": [
+            "quantum",
+            "codeforces"
+        ]
+    },
+    {
         "date": "Jun 14, 2020",
         "description": "Finally after much fumbling around with setting up Q# environment and thinking too hard about simple problems only to realize that I was, infact, thinking much too hard, I've completed the Codeforces Q# Warm-up round.",
         "domain": [
@@ -8,7 +38,7 @@
     },
     {
         "date": "Jun 1, 2020",
-        "description": "This draft paper of TLS1.3 w/ hybrid quantum keys by *Douglas Steblia* of U of Waterloo seems interesting.",
+        "description": "I've been reading this draft paper of TLS1.3 w/ hybrid quantum keys by *Douglas Steblia* of U of Waterloo.",
         "link": "https://dstebila.github.io/draft-stebila-tls-hybrid-design/draft-stebila-tls-hybrid-design.html",
         "domain": [
             "quantum"
