@@ -1,23 +1,23 @@
-#internship-list {
+#work-list {
   list-style-type: none;
   padding-left: 1em;
   color: black;
   font-family: "Vollkorn", serif;
 }
 
-#internship-list > li section a {
+#work-list > li section a {
   text-decoration: none;
-/*   margin-left: 1em; */
+  /*   margin-left: 1em; */
   color: #0000df;
   /* font-family: "Noto Serif", serif; */
 }
 
-.internship-name {
+.work-name {
   font-size: large;
   margin-bottom: 0em;
 }
 
-.internship-company {
+.work-company {
   margin-top: 0px;
   margin-bottom: 0px;
   font-style: italic;
@@ -25,7 +25,7 @@
   margin-left: 1em;
 }
 
-.internship-project_name {
+.work-project_name {
   margin-top: 0px;
   margin-left: 1em;
   margin-bottom: 0px;
@@ -33,16 +33,22 @@
   color: rgba(0, 0, 0, 0.6);
 }
 
-.internship-description {
+.work-description {
   margin-top: 0px;
   font-size: 1.2em;
-  margin-left: 1em;
+  /* margin-left: 1em; */
 }
 
-.internship-project_time {
+.work-project_time {
   margin-top: 0px;
   margin-left: 1em;
   font-style: italic;
   color: rgba(0, 0, 0, 0.6);
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+@media (max-width: 820px) {
+  #work-list {
+    padding-left: 0;
+  }
 }

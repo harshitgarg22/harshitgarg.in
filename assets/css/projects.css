@@ -7,7 +7,7 @@
 
 #project-list > li section a {
   text-decoration: none;
-/*   margin-left: 1em; */
+  /*   margin-left: 1em; */
   color: #0000df;
   /* font-family: "Noto Serif", serif; */
 }
@@ -19,14 +19,23 @@
 
 .project-name {
   font-size: large;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.2em;
 }
 
-.project-description p{
+.project-mentor {
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3),
+    0px -1px 0px rgba(0, 0, 0, 0.7);
+  color: rgba(0, 0, 0, 0.3);
+  margin: 0 0 0 1em;
+  padding: 0;
   font-style: oblique;
+}
+
+.project-description ul {
+  /* font-style: oblique; */
   margin-top: 0px;
-  font-size: 1.2em;
-  margin-left: 1em;
+  font-size: 1.1em;
+  margin-left: 0;
 }
 
 .project-tags {
@@ -40,4 +49,10 @@
 
 .link-icon {
   background: url(/static/icons/link-solid.svg) center left no-repeat;
+}
+
+@media (max-width: 660px) {
+  #project-list {
+    padding-left: 0;
+  }
 }

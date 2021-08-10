@@ -1,8 +1,20 @@
 [
     {
-        "name": "Intern",
+        "name": "Software Development Intern - Big Data Platforms",
+        "company": "Walmart Labs, Bangalore",
+        "description": "- Working on developing metadata applications using python and MySQL using MySQL connectors to obtain metadata from databases and provide this to Walmart internally for monitoring and analytics. \n- The application is to be used upon petabytes of data that Walmart globally generates.",
+        "dateStart": "May 2021",
+        "dateEnd": "Jul 2021",
+        "domain": [
+            "SDE",
+            "python",
+            "mysql"
+        ]
+    },
+    {
+        "name": "Research Intern - Quantum Computing",
         "company": "UST Global, Trivandurum",
-        "description": "We explored the systems to migrate the current Public Key Infrastructure to become \"Quantum Safe\" (example CQC). For this, we studied the [liboqs](https://github.com/open-quantum-safe/liboqs) project for hybrid key encryption of openSSH, and BB84 protocol. There is also an implementation of Quantum Medical Image Encryption (available [here](https://github.com/harshitgarg22/quantum_image_encryption)) that I worked on.",
+        "description": "- We explored the systems to migrate the current Public Key Infrastructure to become \"Quantum Safe\" (example CQC). For this, we studied the [liboqs](https://github.com/open-quantum-safe/liboqs) project for hybrid key encryption of openSSH, and BB84 protocol. \n- There is also an implementation of Quantum Medical Image Encryption (available [here](https://github.com/harshitgarg22/quantum_image_encryption)) that I worked on.",
         "dateStart": "May 2020",
         "dateEnd": "Jun 2020",
         "domain": [
