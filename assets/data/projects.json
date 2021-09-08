@@ -10,7 +10,6 @@
     "mentor": "Prof. Rajesh Kumar, CSIS BITS Pilani",
     "description": "- Repository of attack trees and attack defense trees.\n- Developed a website with PythonAnywhere from scratch using **Flask, MySQL, Bootstrap, and JS.**",
     "github": "https://github.com/harshitgarg22/afort",
-    "link": "{{url_for('afort')}}",
     "tags": ["html", "css", "javascript", "attack-trees", "flask"]
   }
 ]
