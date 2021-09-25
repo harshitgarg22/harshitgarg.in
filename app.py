@@ -101,7 +101,7 @@ def cv():
 def resume():
     # return send_file(os.path.join(".", "assets", "docs", "cv.pdf"))
     return redirect(
-        "https://drive.google.com/file/d/15o0cMw_l_dA4mnKMIiQUc8R-IzRsjxRZ/view?usp=sharing"
+        "https://drive.google.com/file/d/1_onJxlwp7jnhDU2_W7bk41pVfWR4koiD/view?usp=sharing"
     )
 
 
