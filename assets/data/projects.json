@@ -1,14 +1,32 @@
 [
   {
+    "name": "Group messaging system using Message Queues & Pre-forking Webserver.",
+    "mentor": "Prof. K Hari Babu, CSIS BITS Pilani",
+    "description": "- Developed a group messaging system based on **UNIX Message Queues**.\n- Developed a pre-forking model for a web server with support for always alive spare servers for new connections.\n- Based on UNIX signals, and child-parent communication through sockets; simulated via **Apache Benchmarking** tool.",
+    "tags": ["UNIX", "networks", "TCP", "UDP"]
+  },
+  {
+    "name": "Boolean query parallel searching in a file using MPI & Hyperquicksort in OpenMP.",
+    "mentor": "Prof. K Hari Babu, CSIS BITS Pilani",
+    "description": "- Developed a boolean query-based search system for in **MPI** using block-wise partitioning of data; analyzed speedup, efficiency, and created task dependency graphs.\n- Implemented Hyperquicksort in **OpenMP**; analyzed for speedup, efficiency, Amdahl’s law, cost optimality concerning maximum number of processors.",
+    "tags": ["parallel computing", "MPI", "OpenMP"]
+  },
+  {
+    "name": "Vector space-based information retrieval.",
+    "mentor": "Prof. Vinti Agarwal, CSIS BITS Pilani",
+    "description": "- Developed a vector space-based IR system to perform query search on a corpus and return results based on tf-idf.\n- Improved the system by **measuring proximity** of query words in the corpus and **synonym matching** of query words.",
+    "tags": ["search engine", "inverted index"]
+  },
+  {
     "name": "Age of Information using distortion and delay.",
     "mentor": "Prof. Amit Dua, CSIS BITS Pilani",
-    "description": "- Literature review of existing Age of Information models.\n- Worked on a problem relating to **KKT, Lagrangian, and Convex Optimization theory** in academic collaboration with several Professors and drafted a preprint.",
-    "tags": ["Age of Information", "Research"]
+    "description": "- Ran simulations and determined optimal scheduling strategy when communication between source and is subjected to constraints of distortion increasing, and the quality decaying over a period of time.\n- Gained understanding of **KKT, Lagrangian, and Convex Optimization** theory in academic collaboration with several Professors and the paper has been accepted in TrustCom 2021.",
+    "tags": ["age of information", "research", "accepted paper"]
   },
   {
     "name": "AFORT",
     "mentor": "Prof. Rajesh Kumar, CSIS BITS Pilani",
-    "description": "- Repository of attack trees and attack defense trees.\n- Developed a website with PythonAnywhere from scratch using **Flask, MySQL, Bootstrap, and JS.**",
+    "description": "- Created a repository of attack trees and attack defense trees.\n- Developed a dynamic website from scratch using **Flask, MySQL, Bootstrap, and JS.**",
     "github": "https://github.com/harshitgarg22/afort",
     "tags": ["html", "css", "javascript", "attack-trees", "flask"]
   }

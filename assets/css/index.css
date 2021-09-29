@@ -47,7 +47,7 @@ hr {
 
 #me-figure > figcaption {
   text-align: center;
-  margin-top: 1em;
+  margin-top: 0.5em;
   font-size: 0.9em;
 }
 
@@ -99,7 +99,7 @@ hr {
     text-decoration: none;
   }
   hr {
-    width: 85vw;
+    width: 90vw;
   }
   #me-figure {
     margin: 0;

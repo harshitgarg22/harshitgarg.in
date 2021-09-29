@@ -24,6 +24,7 @@ def home():
     projects = getProjects()
     films = getFilms()
     works = getWorks()
+    publications = getPublications()
 
     return render_template(
         "index.html",
@@ -31,6 +32,7 @@ def home():
         projects=projects,
         films=films,
         works=works,
+        publications=publications,
     )
 
 
@@ -148,6 +150,16 @@ def getProjects():
         projects = json.load(f)
 
     return projects
+
+
+def getPublications():
+
+    pubs = []
+
+    with open(os.path.join("assets", "data", "publications.json"), "r") as f:
+        pubs = json.load(f)
+
+    return pubs
 
 
 # def getworks():

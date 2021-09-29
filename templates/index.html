@@ -27,6 +27,9 @@
   <link rel="preload" href="static/css/works.css" as="style" onload="this.onload=null;">
   <link rel="stylesheet" href="static/css/works.css" />
 
+  <link rel="preload" href="static/css/publications.css" as="style" onload="this.onload=null;">
+  <link rel="stylesheet" href="static/css/publications.css" />
+
   <link rel="preload" href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" as="style"
     onload="this.onload=null;">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet" />
@@ -50,10 +53,12 @@
         <a href="#me" onclick="javascript:;" class="nav-element">me</a>
       </li>
       <li>
-        <a href="#projects" onclick="javascript:;" class="nav-element">projects</a>
+        <a href="#publications" onclick="javascript:;" class="nav-element">publications</a>
+      </li>
+        <a href="#workex" onclick="javascript:;" class="nav-element">experience</a>
       </li>
       <li>
-        <a href="#workex" onclick="javascript:;" class="nav-element">experience</a>
+        <a href="#projects" onclick="javascript:;" class="nav-element">projects</a>
       </li>
       <!-- <li>
         <a href="#books" onclick="javascript:;" class="nav-element">books</a>
@@ -109,8 +114,43 @@
           </div>
         </div>
       </section>
-      <section name="projects">
-        <br /><br />
+      <br /><br />
+      <section name="publications">
+        <a name="publications">
+          <h1 class="sub-headings">publications</h1>
+        </a>
+        <hr />
+        <ul id="publication-list">
+          {% for publication in publications %}
+            {% for author in publication.authors %}
+              {% if author == "Harshit Garg" %}
+                <span style="font-weight: 700; color: black;">{{author}},</span>
+              {% else %}
+                {{author}},
+              {% endif %}
+            {% endfor %}
+              "{{publication.title}}" in <em>{{publication.publisher}}.</em>
+          {% endfor %}
+        </ul>
+      </section>
+      <section name="#workex">
+        <a name="workex">
+          <h1 class="sub-headings">experience</h1>
+        </a>
+        <hr />
+        <ul id="work-list">
+          {% for work in works %}
+          <li>
+            <section>
+              <h1 class="work-name">{{work.name}} - {{work.company}}</h1>
+              <p class="work-division">at <span style="font-weight: 600;">{{work.division}}</span></p>
+              <p class="work-project_time">{{work.dateStart}} - {{work.dateEnd}}</p>
+              <div class="work-description">{{work.description | markdown}}</div>
+            </section>
+          </li>{% endfor %}
+        </ul>
+      </section>
+      <section name="projects"> 
         <a name="projects">
           <h1 class="sub-headings">projects</h1>
         </a>
@@ -123,7 +163,7 @@
                 {{project.name}}
               </h1>
               {% if 'mentor' in project %}
-              <span class="project-mentor">Mentor: {{project.mentor}}</span>
+              <span class="project-mentor">Advisor: {{project.mentor}}</span>
               {% endif %}
               <div class="project-description">
                 {{project.description | markdown}}
@@ -139,29 +179,11 @@
                 {% endif %}
               </p>
               <p class="project-tags">
-                tags: {% for tag in project.tags %} {{ tag }} {% endfor %}
+                tags: {% for tag in project.tags %} <span class="tag">{{ tag }} </span> {% endfor %}
               </p>
             </section>
           </li>
           {% endfor %}
-        </ul>
-      </section>
-      <section name="#workex">
-        <br />
-        <a name="workex">
-          <h1 class="sub-headings">experience</h1>
-        </a>
-        <hr />
-        <ul id="work-list">
-          {% for work in works %}
-          <li>
-            <section>
-              <h1 class="work-name">{{work.name}}</h1>
-              <p class="work-company">with <span style="font-weight: 600;">{{work.company}}</span></p>
-              <p class="work-project_time">{{work.dateStart}} - {{work.dateEnd}}</p>
-              <div class="work-description">{{work.description | markdown}}</div>
-            </section>
-          </li>{% endfor %}
         </ul>
       </section>
       <!-- <section name="books">

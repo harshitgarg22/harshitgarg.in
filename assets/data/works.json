@@ -1,18 +1,20 @@
 [
   {
-    "name": "Software Development Intern - Big Data Platforms",
+    "name": "Software Development Intern",
+    "division": "Big Data Platforms",
     "company": "Walmart Labs, Bangalore",
-    "description": "- Working on developing metadata applications using python and MySQL using MySQL connectors to obtain metadata from databases and provide this to Walmart internally for monitoring and analytics. \n- The application is to be used upon petabytes of data that Walmart globally generates.",
+    "description": "- Developed an application using python and **MySQL connectors** to obtain **metadata** from databases. Developed both push-based and pull-based background services for live updation of metadata store. Used for stream analytics. \n- The application is to be used upon **petabytes** of data that Walmart globally generates.",
     "dateStart": "May 2021",
     "dateEnd": "Jul 2021",
     "domain": ["SDE", "python", "mysql"]
   },
   {
-    "name": "Research Intern - Quantum Computing",
+    "name": "Research Intern",
+    "division": "Quantum Computing",
     "company": "UST Global, Trivandurum",
-    "description": "- We explored the systems to migrate the current Public Key Infrastructure to become \"Quantum Safe\" (example CQC). For this, we studied the [liboqs](https://github.com/open-quantum-safe/liboqs) project for hybrid key encryption of openSSH, and BB84 protocol. \n- There is also an implementation of Quantum Medical Image Encryption that I worked on.",
+    "description": "- Worked with a team of 4 to study ”**quantum-safe**” protocols including liboqs for openssh, openssl, etc., and Hybrid key-exchange in TLS1.3 and prepared a report. \n- Implementation of **Quantum Image Encryption** for medical imagery in **qiskit**. Uses NEQR, Image Scrambling, and 2-D logistic sine-map.",
     "dateStart": "May 2020",
     "dateEnd": "Jun 2020",
-    "domain": ["quantum"]
+    "domain": ["quantum", "research"]
   }
 ]
