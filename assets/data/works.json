@@ -1,20 +1,45 @@
 [
   {
+    "name": "Research Intern (Bachelor Thesis)",
+    "division": "Serverless Computing",
+    "company": "University of Edinburgh, Edinburgh, UK",
+    "description": "- Working on characterizing the performance of modern server applications running in the cloud. \n- Currently developing a benchmark suite ([vSwarm](https://github.com/ease-lab/vSwarm/)) for standalone functions for knative. \n- Technologies: golang, knative, kubernetes, gRPC.",
+    "dateStart": "Jan 2022",
+    "dateEnd": "present",
+    "domain": [
+      "golang",
+      "knative",
+      "kubernetes",
+      "gRPC",
+      "serverless",
+      "comp-arch",
+      "systems",
+      "research"
+    ]
+  },
+  {
     "name": "Software Development Intern",
     "division": "Big Data Platforms",
     "company": "Walmart Labs, Bangalore",
     "description": "- Developed an application using python and **MySQL connectors** to obtain **metadata** from databases. Developed both push-based and pull-based background services for live updation of metadata store. Used for stream analytics. \n- The application is to be used upon **petabytes** of data that Walmart globally generates.",
     "dateStart": "May 2021",
     "dateEnd": "Jul 2021",
-    "domain": ["SDE", "python", "mysql"]
+    "domain": [
+      "SDE",
+      "python",
+      "mysql"
+    ]
   },
   {
     "name": "Research Intern",
     "division": "Quantum Computing",
     "company": "UST Global, Trivandurum",
-    "description": "- Worked with a team of 4 to study ”**quantum-safe**” protocols including liboqs for openssh, openssl, etc., and Hybrid key-exchange in TLS1.3 and prepared a report. \n- Implementation of **Quantum Image Encryption** for medical imagery in **qiskit**. Uses NEQR, Image Scrambling, and 2-D logistic sine-map.",
+    "description": "- Worked with a team of 4 to study ``**quantum-safe**\" protocols including liboqs for openssh, openssl, etc., and Hybrid key-exchange in TLS1.3 and prepared a report. \n- Implementation of **Quantum Image Encryption** for medical imagery in **qiskit**. Uses NEQR, Image Scrambling, and 2-D logistic sine-map.",
     "dateStart": "May 2020",
     "dateEnd": "Jun 2020",
-    "domain": ["quantum", "research"]
+    "domain": [
+      "quantum",
+      "research"
+    ]
   }
 ]
