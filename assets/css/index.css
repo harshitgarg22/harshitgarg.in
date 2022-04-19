@@ -40,12 +40,12 @@ hr {
   margin-bottom: 0px;
 }
 
-#me-figure > img {
+#me-figure>img {
   width: 20em;
   height: auto;
 }
 
-#me-figure > figcaption {
+#me-figure>figcaption {
   text-align: center;
   margin-top: 0.5em;
   font-size: 0.9em;
@@ -55,6 +55,7 @@ hr {
   hyphens: auto;
   font-size: calc(1em + 0.5vw);
 }
+
 .me-description a {
   text-decoration: none;
   color: darkred;
@@ -76,6 +77,10 @@ hr {
   background: url(/static/icons/telegram.svg) center left no-repeat;
 }
 
+.telegram-icon {
+  background: url(/static/icons/twitter.png) center left no-repeat;
+}
+
 .pdf-icon {
   background: url(/static/icons/pdf.svg) center left no-repeat;
 }
@@ -91,6 +96,7 @@ hr {
     text-align: center;
     margin: 1.5em 1em 1em 1.5em;
   }
+
   #phone_cv a {
     padding: 0.5em;
     background-color: darkred;
@@ -98,9 +104,11 @@ hr {
     color: #fff;
     text-decoration: none;
   }
+
   hr {
     width: 90vw;
   }
+
   #me-figure {
     margin: 0;
     width: 100%;
@@ -108,30 +116,38 @@ hr {
     /* align-content: center; */
     text-align: center;
   }
-  #me-figure > img {
+
+  #me-figure>img {
     margin: 1em auto 0 auto;
   }
-  #me-figure > figcaption {
+
+  #me-figure>figcaption {
     margin-top: 0.2em;
     margin-bottom: 0.4em;
   }
+
   .me-description {
     margin: 0;
   }
+
   .sub-headings {
     margin-top: 0;
   }
+
   #main-content {
     width: 100%;
     margin-top: 7%;
   }
+
   #article-content {
     margin: 1em;
     /* width: 80%; */
   }
+
   #main-content {
     width: auto;
   }
+
   #project-list {
     padding-left: 0;
   }
